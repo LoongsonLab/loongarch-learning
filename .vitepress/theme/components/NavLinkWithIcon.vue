@@ -1,5 +1,5 @@
 <script setup>
-import { useRoute } from 'vitepress'
+import { useRoute, withBase } from 'vitepress'
 import { computed } from 'vue'
 
 const props = defineProps({
@@ -16,12 +16,14 @@ const isActiveLink = computed(() => {
   const link = props.link.replace(/\/$/, '') || '/'
   return path === link || (link !== '/' && path.startsWith(link))
 })
+const href = computed(() => withBase(props.link))
+const imageSrc = computed(() => props.image ? withBase(props.image) : '')
 </script>
 
 <template>
-  <a :href="link" :class="['nav-link-with-icon', { active: isActiveLink }]">
+  <a :href="href" :class="['nav-link-with-icon', { active: isActiveLink }]">
     <span v-if="image" class="nav-icon nav-icon-img" aria-hidden="true">
-      <img :src="image" alt="" />
+      <img :src="imageSrc" alt="" />
     </span>
     <span v-else-if="icon" :class="['nav-icon', icon]" aria-hidden="true" />
     <span v-html="text" />
