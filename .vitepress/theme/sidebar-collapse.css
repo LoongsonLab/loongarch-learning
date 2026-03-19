@@ -18,12 +18,18 @@
     padding-left: 0 !important;
   }
 
+  /* 菜单收起时左上角显示 logo + 龙芯实验室，与展开时水平位置一致（与默认 .title 的 padding 0 32px 对齐） */
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .VPNavBarTitle,
   .Layout.sidebar-collapsed .VPNavBar.has-sidebar .title {
-    width: 0 !important;
+    width: auto !important;
     min-width: 0 !important;
-    padding-left: 0 !important;
-    overflow: hidden !important;
-    visibility: hidden !important;
+    padding-left: 10px !important;
+    overflow: visible !important;
+    visibility: visible !important;
+    /* 下边线与其他位置一致，保持 1px 不加粗 */
+    border-bottom-width: 0px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: var(--vp-c-divider) !important;
   }
 
   .Layout.sidebar-collapsed .VPNavBar.has-sidebar .content {
@@ -50,6 +56,12 @@
 @media (min-width: 1440px) {
   .Layout.sidebar-collapsed .VPContent.has-sidebar {
     padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+
+  /* 大屏居中时，logo/文字与展开时同一水平位置 */
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .VPNavBarTitle,
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .title {
+    padding-left: max(32px, calc((100vw - (var(--vp-layout-max-width) - 64px)) / 2)) !important;
   }
 
   .Layout.sidebar-collapsed .VPNavBar.has-sidebar .content {
