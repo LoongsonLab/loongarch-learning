@@ -1,15 +1,34 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import { ref, watch, onMounted } from 'vue'
+import { useRoute } from 'vitepress'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 
 const SIDEBAR_COLLAPSED_KEY = 'loongson-sidebar-collapsed'
 
 const isCollapsed = ref(false)
+const route = useRoute()
 
-onMounted(() => {
+function applyCollapsedFromStorage() {
   if (typeof localStorage !== 'undefined') {
     isCollapsed.value = localStorage.getItem(SIDEBAR_COLLAPSED_KEY) === '1'
   }
+}
+
+function onOpenSidebar() {
+  isCollapsed.value = false
+}
+
+onMounted(() => {
+  applyCollapsedFromStorage()
+  window.addEventListener('loongson-open-sidebar', onOpenSidebar)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('loongson-open-sidebar', onOpenSidebar)
+})
+
+watch(() => route.path, () => {
+  applyCollapsedFromStorage()
 })
 
 watch(isCollapsed, (v) => {

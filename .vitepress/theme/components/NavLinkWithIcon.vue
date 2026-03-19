@@ -18,10 +18,21 @@ const isActiveLink = computed(() => {
 })
 const href = computed(() => withBase(props.link))
 const imageSrc = computed(() => props.image ? withBase(props.image) : '')
+
+const SIDEBAR_COLLAPSED_KEY = 'loongson-sidebar-collapsed'
+const OPEN_SIDEBAR_EVENT = 'loongson-open-sidebar'
+
+function onNavClick() {
+  if (props.link !== '/') return
+  if (typeof localStorage !== 'undefined') {
+    localStorage.removeItem(SIDEBAR_COLLAPSED_KEY)
+  }
+  window.dispatchEvent(new CustomEvent(OPEN_SIDEBAR_EVENT))
+}
 </script>
 
 <template>
-  <a :href="href" :class="['nav-link-with-icon', { active: isActiveLink }]">
+  <a :href="href" :class="['nav-link-with-icon', { active: isActiveLink }]" @click="onNavClick">
     <span v-if="image" class="nav-icon nav-icon-img" aria-hidden="true">
       <img :src="imageSrc" alt="" />
     </span>
