@@ -1,19 +1,21 @@
-/* 调整大屏（>=1200px）下内容布局，让 1920*1080 看起来更舒服 */
+/* 根据窗口大小自适应铺满，减少两侧空白 */
 
-@media (min-width: 1200px) {
-  /* 文档与首页内容区域在大屏上更宽一些 */
-  .VPDoc .container,
-  .VPHome .container {
-    max-width: 1400px;
-  }
-
-  .VPDoc .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .VPHome .VPHomeFeatures .container {
-    max-width: 1400px;
-  }
+:root {
+  /* 布局最大宽度随视口变化，铺满屏幕（留少量边距） */
+  --vp-layout-max-width: min(1920px, 98vw);
 }
 
+/* 文档与首页内容区域随布局宽度自适应，不额外限制 */
+.VPDoc .container,
+.VPHome .container {
+  max-width: 100%;
+}
+
+.VPDoc .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.VPHome .VPHomeFeatures .container {
+  max-width: 100%;
+}
