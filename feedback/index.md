@@ -14,32 +14,57 @@ outline: deep
 - 希望补充新的资源或改进现有资源的呈现方式。
 
 
-<div class="feedback-cta">
-  <a href="https://www.loongbbs.cn/" target="_blank" rel="noopener noreferrer" class="feedback-button">去提问</a>
+<div class="feedback-section">
+  <div class="feedback-box">
+    <span class="feedback-label">教学资源相关</span>
+    <a href="https://www.loongbbs.cn/t/IntegratedSystemsEducation" target="_blank" rel="noopener noreferrer" class="feedback-button">去提问</a>
+  </div>
+  <div class="feedback-box">
+    <span class="feedback-label">竞赛相关</span>
+    <a href="https://www.loongbbs.cn/t/OSDesignChallenge" target="_blank" rel="noopener noreferrer" class="feedback-button">去提问</a>
+  </div>
 </div>
 
 <style scoped>
-.feedback-cta {
-  margin: 1.5rem 0;
+.feedback-section {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
+.feedback-box {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 0;
+}
+
+.feedback-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+}
+
 .feedback-button {
-  display: inline-block;
+  flex-shrink: 0;
   padding: 10px 24px;
   border-radius: 0;
   background-color: #2563eb;
-  color: #ffffff;
-  font-size: 1rem;
+  color: #fff;
+  font-size: 0.9375rem;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.2s;
 }
+
 .feedback-button:hover {
   background-color: #1d4ed8;
-}
-.feedback-button-alt {
-  background-color: #374151;
-}
-.feedback-button-alt:hover {
-  background-color: #1f2937;
 }
 </style>

@@ -14,7 +14,7 @@ export default defineConfig({
         component: 'NavLinkWithIcon',
         props: {
           text: 'LA资源总览',
-          link: '/overview/',
+          link: '/',
           image: '/book.png',
         },
       },
