@@ -83,7 +83,7 @@ export default defineConfig({
       },
       
       {
-        text: '操作系统',
+        text: '龙架构操作系统',
         collapsed: true,
         items: [
           { text: '支持龙架构的发行版', link: '/os/release-os' },
@@ -93,7 +93,7 @@ export default defineConfig({
       },
       
       {
-        text: 'LoongArch相关的仓库',
+        text: '龙架构相关的仓库',
         collapsed: true,
         items: [
           { text: '龙芯实验室', link: '/repos/loongsonlab' },
@@ -105,9 +105,9 @@ export default defineConfig({
         text: '其他杂项',
         collapsed: true,
         items: [
-          { text: '支持龙架构的发行版', link: '/os/release-os' },
-          { text: 'LoongArch开源Kernel', link: '/os/os-kernel' },
-          { text: '基于Rust的Kernel', link: '/os/os-kernel' },
+          { text: '龙架构相关的论坛', link: '/misc/loong64-form' },
+          { text: '开发者相关', link: '/misc/developer' },
+          { text: '其他趣闻', link: '/misc/news' },
         ],
       },
 
