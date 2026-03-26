@@ -132,15 +132,40 @@ outline: deep
 
 ## **LoongArch相关的仓库**
 
-[实验室仓库](/repos/loongsonlab)
-- https://github.com/orgs/LoongsonLab
+龙芯实验室:https://github.com/LoongsonLab
 
-[龙芯开源社区](/repos/loongson-community)
+龙芯爱好者社区:https://www.loongbbs.cn/
+
+电子发烧友龙芯版块:https://bbs.elecfans.com/group_1650
+
+龙芯Loongnix系统:http://www.loongnix.cn/zh/proj/
+
+龙芯应用合作社: https://app.loongapps.cn
+
+龙芯开源社区:http://www.loongnix.cn/zh/proj/
+
+龙芯爱好者社区:https://www.loongbbs.cn/
+
+龙芯应用合作社: https://app.loongapps.cn/
+
+龙芯开源组织:https://github.com/loongson
+
+龙芯云社区:https://github.com/Loongson-Cloud-Community
+
+loong64: https://github.com/loong64
+
+龙芯开源组织: https://gitee.com/loongson
+
+开源鸿蒙龙架构移植: https://gitee.com/openharmony-loongarch
+
+龙芯教育:https://gitee.com/loongson-edu
+
+loongson生态创新中心:https://gitee.com/cn-loongson
+
 
 ## **资讯动态**
 
 最近更新日期：2026-3-25
-
 
 
 ---
