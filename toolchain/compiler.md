@@ -3,14 +3,14 @@ title: LoongArch 工具链
 outline: deep
 ---
 
-# LoongArch GCC
+# LoongArch 工具链
 
 GCC（GNU Compiler Collection）是全球知名的**自由软件编译器套件**，最初为GNU操作系统开发，       
 现已成为跨平台软件开发的核心工具之一。其核心功能是支持多种编程语言的编译与优化，广泛应用于操作系统、       
 嵌入式系统、高性能计算等领域。
 
 
-## 如何编译交叉编译器
+## 一、如何编译交叉编译器GCC
 
 本小节会教大家如何从gcc等源码编译我们使用的交叉编译器。
 
@@ -18,8 +18,6 @@ GCC（GNU Compiler Collection）是全球知名的**自由软件编译器套件*
 
 配置说明：
 
-:::{list-table} 相关编译工具链说明
-:header-rows: 1
 *   - **版本说明**
     - **下载链接**
 
@@ -47,7 +45,6 @@ GCC（GNU Compiler Collection）是全球知名的**自由软件编译器套件*
 *   - GDB版本： gdb-16.3
     - [https://ftp.gnu.org/gnu/gdb/](https://ftp.gnu.org/gnu/gdb/)
 
-:::
 
 下面逐一演示工具链的制作过程。   
 首先我们定义几个常用的变量（GCC支持生成浮点指令）, 下面显示的命令规则是在Makefile中：
@@ -60,7 +57,7 @@ BUILD64=-mabi=lp64d
 CROSS_BUILD_DIR=cross-tools-all-202612 #用于安装交叉编译器的目录在：$(SYSDIR)/$(CROSS_BUILD_DIR)
 ```
 
-#### linux header的安装
+#### 1. linux header的安装
 ``` Makefile
 LINUX_DIR := linux-6.7
 linux_header:
@@ -73,7 +70,7 @@ linux_header:
 
 编译完成后会在```cross-tools-all-202612/sysroot/usr/include```安装相关的头文件等
 
-#### binutils的编译和安装
+#### 2. binutils的编译和安装
 ``` Makefile
 BINUTILS  := binutils-2.45
 binutils:
@@ -90,7 +87,7 @@ binutils:
 
 ```
 
-#### GMP的编译和安装
+#### 3. GMP的编译和安装
 ```Makefile
 GMP     := gmp-6.3.0
 gmp:
@@ -100,7 +97,7 @@ gmp:
    cd $(GMP)/build && make install
 ```
 
-#### MPFR的编译和安装
+#### 4. MPFR的编译和安装
 ```Makefile
 MPFR    := mpfr-4.2.2
 mpfr:
@@ -110,7 +107,7 @@ mpfr:
    cd $(MPFR)/build && make install
 ```
 
-#### MPC的编译和安装
+#### 5. MPC的编译和安装
 ```Makefile
 MPC     := mpc-1.3.1
 mpc:
@@ -120,7 +117,7 @@ mpc:
    cd $(MPC)/build && make install
 ```
 
-#### 简易版GCC的编译和安装
+#### 6. 简易版GCC的编译和安装
 制作交叉编译器中的GCC，第一次编译交叉工具链的GCC需要采用精简方式进行编译和安装，否则会因为缺少目标系统的C库而导致部分内容编译链接失败
 ```Makefile
 GCC       := gcc-15.2.0
@@ -144,7 +141,7 @@ gcc-simp:
    cd $(GCC)/tools-build && make install-strip-gcc install-strip-target-libgcc
 ```
 
-#### GlibC的编译和安装
+#### 7. GlibC的编译和安装
 ```Makefile
 GLIBC     := glibc-2.42
 glibc:
@@ -172,7 +169,7 @@ glibc:
                         ${SYSDIR}/$(CROSS_BUILD_DIR)/sysroot/usr/lib/systemd/system/nscd.service
 ```
 
-#### 完整版GCC的编译和安装
+#### 8. 完整版GCC的编译和安装
 ```Makefile
 GCC       := gcc-15.2.0
 gcc:
@@ -194,7 +191,7 @@ gcc:
 此时安装的GCC会替换掉我们在上面安装的简易版GCC。
 
 
-#### 特殊说明
+#### 9. 特殊说明
 LoongArch的GCC上游在版本13以后，再编译GCC的时候，会默认生成向量指令，即产生参数```-msimd=lsx```，
 我们可以使用-v来查看验证
 ```bash
@@ -214,7 +211,7 @@ COLLECT_GCC_OPTIONS='-o' 'main' '-v' '-mabi=lp64d' '-march=la64v1.0' '-mfpu=64' 
 ```
 比如上面我们在编译的时候，默认关闭了向量的生成。
 
-:::{caution}
+
 --with-simd=none它只是在编译在**默认情况下**关闭生成向量指令，但是还是可以使用命令参数```-msimd=```来
 手动的指定可以产生128位向量。
 
@@ -224,12 +221,11 @@ loongarch64-linux-musl-gcc main.c -o main -msimd=lsx -v
 ```
 
 反汇编时，我们可以看见使用了```vld和vst```等向量指令。
-:::
 
 
-# LoongArch GDB
 
-## GDB的编译和安装
+
+## 二、GDB的编译和安装
 
 - GDB版本： gdb-16.3
 
@@ -249,9 +245,7 @@ gdb:
    cd $(GDB)/build && make DESTDIR=${SYSDIR}/${CROSS_BUILD_DIR} install
 ```
 
-# LoongArch Musl
-
-## 如何编译loongarch64-linux-musl[sf]
+## 三、如何编译 LoongArch Musl
 
 基于musl-c库的交叉编译器编译顺序和上述的基本一致，我们为了方便，将其做了封装，可以直接使用编译仓库。
 
@@ -319,9 +313,7 @@ shell> ./bin/loongarch64-linux-musl-gcc -v
 ```
 
 
-# LoongArch LLVM
-
-## LLVM的编译和安装
+## 四、LoongArch LLVM编译和安装
 
 - 版本： llvmorg-21.1.8
 
@@ -350,11 +342,9 @@ ninja install
 
 ```
 
+## 五、LoongArch rust 安装和源码编译
 
-# LoongArch rust
-
-
-## 从官方下载使用
+### 1. 从官方下载使用
 
 ``` shell 
 # 获得rustup
@@ -384,8 +374,7 @@ rustup component add llvm-tools
 
 ```
 
-
-## rust从源码编译和安装
+### 2. rust从源码编译和安装
 
 - 版本：1.93.0
 
@@ -416,9 +405,7 @@ cd rustc-1.93.0-src
 
 ```
 
-# LoongArch QEMU
-
-## QEMU编译安装
+## 六、LoongArch QEMU 编译安装
 
 - 版本：10.2.0
 
@@ -440,7 +427,7 @@ ninja
 注意：上述的编译都是按照LoongArch64架构来处理的。
 
 
-# LoongArch32R 相关工具链
+## 七、LoongArch32R 相关工具链
 
 GCC 版本： 16.0.0
 GDB 版本： 17.0.5
@@ -450,7 +437,7 @@ x86_64 host: Ubuntu 24.02
 下载地址在[这里](https://github.com/LoongsonLab/cross-build-tools/releases/tag/loongarch32r-unknown-linux-gnusf-gcc-16.0.0-ubuntu24.04)
 
 
-# 工具列表汇总
+## 八、工具列表汇总
 
 本仓库所有工具如下表所示：
 
