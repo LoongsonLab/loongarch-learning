@@ -13,7 +13,7 @@ outline: deep
 
 -----
 
-<img src="/public/os/alpine.svg" width = 300 height = 200>
+<img src="/public/os/alpine.svg" width = 60 height = 40>
 
 基于 musl libc 和 BusyBox 的，注重安全性的轻量级 Linux 发行版
 
