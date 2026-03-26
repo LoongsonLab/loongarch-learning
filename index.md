@@ -88,7 +88,7 @@ outline: deep
 
 ## **LoongArch 工具链**
 
-- [LoongArch工具链](/toolchain/)
+- [LoongArch工具链](/toolchain/compiler)
 	
 	主要是涉及龙架构的交叉编译器：
 	- GCC与其GLIBC
