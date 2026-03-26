@@ -80,14 +80,15 @@ outline: deep
 - [LoongArch相关IP](/practice/ip)
 	
 	主要涉及和龙架构相关的一些IP核：
+	- OpenC910：具有先进的12级流水线，乱序执行的超标量处理器
+	- LabCore164：五级流水线，支持浮点
 	- ChipLab：loongArch32R的一个实现SOC
-	- Open-500：
-	- OpenC910：
+	- Open-500：一个实现了LoongArch32R的五级流水
 
 
 ## **LoongArch 工具链**
 
-- [LoongArch工具链](/toolchain/)
+- [LoongArch工具链](/toolchain/compiler)
 	
 	主要是涉及龙架构的交叉编译器：
 	- GCC与其GLIBC

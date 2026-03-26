@@ -73,7 +73,7 @@ export default defineConfig({
         text: '龙架构工具链',
         collapsed: true,
         items: [
-          { text: '常用工具链', link: '/toolchain/' },
+          { text: '常用工具链', link: '/toolchain/compiler' },
           { text: 'libc库', link: '/toolchain/libc' },
           { text: 'Linux内核', link: '/toolchain/linux-kernel' },
           { text: 'U-boot', link: '/toolchain/uboot' },
