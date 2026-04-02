@@ -6,6 +6,8 @@ export default defineConfig({
   base: '/loongarch-learning/',
   title: '龙芯实验室',
   description: '龙芯实验室介绍',
+  // 关闭深浅色切换，站点固定为浅色模式
+  appearance: false,
   themeConfig: {
     // 顶部左上角：使用 bulb 图标作为实验室 logo（PNG）
     logo: { src: '/bulb.png', alt: '龙芯实验室' },
