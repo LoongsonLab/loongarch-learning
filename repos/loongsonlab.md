@@ -63,4 +63,4 @@ RT-Thread 是一个开源的物联网端实时操作系统(RTOS)。
 
 关于 LoongChipX 平台的开放说明文档，仓库链接：https://github.com/Open-ChipHub/LoongChipX-doc.git
 
-关于 LoongArch 架构与操作系统底层交互的开放说明我而当，仓库链接：https://github.com/LoongsonLab/OS_kernel_with_loong64_doc.git
+关于 LoongArch 架构与操作系统底层交互的开放文档说明，仓库链接：https://github.com/LoongsonLab/OS_kernel_with_loong64_doc.git

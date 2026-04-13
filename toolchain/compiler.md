@@ -5,10 +5,7 @@ outline: deep
 
 # LoongArch 工具链
 
-GCC（GNU Compiler Collection）是全球知名的**自由软件编译器套件**，最初为GNU操作系统开发，       
-现已成为跨平台软件开发的核心工具之一。其核心功能是支持多种编程语言的编译与优化，广泛应用于操作系统、       
-嵌入式系统、高性能计算等领域。
-
+GCC（GNU Compiler Collection）是全球知名的**自由软件编译器套件**，最初为GNU操作系统开发，现已成为跨平台软件开发的核心工具之一。其核心功能是支持多种编程语言的编译与优化，广泛应用于操作系统、嵌入式系统、高性能计算等领域。
 
 ## 一、如何编译交叉编译器GCC
 
@@ -46,7 +43,8 @@ GCC（GNU Compiler Collection）是全球知名的**自由软件编译器套件*
     - [https://ftp.gnu.org/gnu/gdb/](https://ftp.gnu.org/gnu/gdb/)
 
 
-下面逐一演示工具链的制作过程。   
+下面逐一演示工具链的制作过程。
+
 首先我们定义几个常用的变量（GCC支持生成浮点指令）, 下面显示的命令规则是在Makefile中：
 ```Makefile
 SYSDIR=$(shell pwd)
@@ -192,8 +190,7 @@ gcc:
 
 
 #### 9. 特殊说明
-LoongArch的GCC上游在版本13以后，再编译GCC的时候，会默认生成向量指令，即产生参数```-msimd=lsx```，
-我们可以使用-v来查看验证
+LoongArch的GCC上游在版本13以后，再编译GCC的时候，会默认生成向量指令，即产生参数```-msimd=lsx```，我们可以使用-v来查看验证
 ```bash
 loongarch64-linux-gnu-gcc main.c -o main -v
 ```
@@ -211,9 +208,7 @@ COLLECT_GCC_OPTIONS='-o' 'main' '-v' '-mabi=lp64d' '-march=la64v1.0' '-mfpu=64' 
 ```
 比如上面我们在编译的时候，默认关闭了向量的生成。
 
-
---with-simd=none它只是在编译在**默认情况下**关闭生成向量指令，但是还是可以使用命令参数```-msimd=```来
-手动的指定可以产生128位向量。
+--with-simd=none它只是在编译在**默认情况下**关闭生成向量指令，但是还是可以使用命令参数```-msimd=```来手动的指定可以产生128位向量。
 
 我们用上面使用```--with-simd=none```生成的交叉编译器，来生成具有向量指令的可执行文件：
 ```shell
@@ -221,9 +216,6 @@ loongarch64-linux-musl-gcc main.c -o main -msimd=lsx -v
 ```
 
 反汇编时，我们可以看见使用了```vld和vst```等向量指令。
-
-
-
 
 ## 二、GDB的编译和安装
 
@@ -317,8 +309,7 @@ shell> ./bin/loongarch64-linux-musl-gcc -v
 
 - 版本： llvmorg-21.1.8
 
-- 下载路劲:[https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-project-21.1.8.src.tar.xz](https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-project-21.1.8.src.tar.xz)
-
+- 下载路径:[llvm](https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-project-21.1.8.src.tar.xz)
 
 ```bash
 LDFLAGS="${LDFLAGS} -lutil" PKG_CONFIG_SYSROOT_DIR="" \
@@ -378,7 +369,7 @@ rustup component add llvm-tools
 
 - 版本：1.93.0
 
-- 下载地址：[Rust: https://static.rust-lang.org/dist/rustc-1.93.0-src.tar.gz](Rust: https://static.rust-lang.org/dist/rustc-1.93.0-src.tar.gz)
+- 下载地址：[Rust](https://static.rust-lang.org/dist/rustc-1.93.0-src.tar.gz)
 
 
 ```bash
@@ -430,6 +421,7 @@ ninja
 ## 七、LoongArch32R 相关工具链
 
 GCC 版本： 16.0.0
+
 GDB 版本： 17.0.5
 
 x86_64 host: Ubuntu 24.02
@@ -457,7 +449,4 @@ x86_64 host: Ubuntu 24.02
 
 本仓库地址在[这里](https://github.com/LoongsonLab/oscomp-toolchains-for-oskernel)
 
-LoongArch 开发与教学常用工具链索引，点击下方链接跳转。
-
-
-
+LoongArch 开发与教学常用工具链索引，点击[下方链接](https://github.com/loongson/build-tools)跳转。

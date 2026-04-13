@@ -7,18 +7,26 @@ outline: deep
 
 ## 1. 咱龙了吗
 
-这里是社区建立的一个关于龙架构的咨询网站，你可以了解一些软件的最新消息，
+这里是社区建立的一个关于龙架构的咨询网站，你可以跟踪一些开源软件的上游项目进展。
 
-LoongArch生态的情况。
+除此之外，《咱龙了吗？》项目也收集维护、自行撰写了一些围绕龙架构的其他阅读材料。 
 
-网站[在这里](https://areweloongyet.com/docs/intro)
+网站完全由社区爱心人士、龙芯路线的同情者维护，源代码托管在 GitHub 上，由社区爱好者随时更新。
 
+网站：[***咱龙了么***](https://areweloongyet.com/docs/intro)
 
 ## 2. 龙芯爱好者社区
 
-本论坛为想要在龙架构生态中进行软硬件开发的工程师们提供帮助与支持
+该论坛为想要在龙架构生态中进行软硬件开发的工程师们提供帮助与支持。
 
-网站[在这里](https://www.loongbbs.cn/)
+论坛包含龙架构相关讨论，包括：
+- 龙架构软件。龙芯工具链、基础软件及软件生态讨论区
+- 龙架构硬件。龙芯硬件问题讨论
+- 龙架构固件。龙芯各版本固件问题讨论
+- 知识专区。龙架构知识专区
+以及其他龙架构相关知识讨论。
+
+网站[***龙芯爱好者社区***](https://www.loongbbs.cn/)
 
 
 ## 3. 龙架构双周会
@@ -29,14 +37,15 @@ LoongArch生态的情况。
 
 会议进程于 Bilibili @龙芯爱好者社区 账号同步直播，亦时有安排线下活动。
 
-网站[在这里](https://loongfans.cn/biweekly)
-
+网站[***龙架构双周会***](https://loongfans.cn/biweekly)
 
 ## 4. 龙架构的哔哩哔哩
 
-可以看到很多有趣好玩的东西！
+龙芯爱好者社区是由第三方爱好者、行业人员与学生组成的，致力于龙芯（龙架构）软硬件生态建设的互联网社区。
 
-链接[在这里](https://space.bilibili.com/70360929)
+在这里，可以看到很多有趣好玩的东西！
+
+链接[***龙架构的哔哩哔哩***](https://space.bilibili.com/70360929)
 
 
 ## 5. 龙架构漂流板(LoongFly)
@@ -54,14 +63,18 @@ LoongArch生态的情况。
 
 龙架构漂流板(1024计划)活动由龙芯爱好者社区(support@loongfans.com)运营, 计划初期项目缺少自动化流程包含大量人工操作, 如有纰漏欢迎指正。
 
-网站[在这里](https://github.com/loongson-community/1024)
+网站[***龙架构漂流板***](https://github.com/loongson-community/1024)
 
 
 ## 6. 龙架构悬赏与实习机会
 
-社区悬赏项目
+社区悬赏网站。
 
-网站[在这里](https://loongfans.cn/jobs)
+这里公布有社区所需求的适配、研发项目，并有项目完成的相应奖励。
+
+网站经常公布社区实习机会，有需求的同学可以主动联系。
+
+网站[***龙架构悬赏***](https://loongfans.cn/jobs)
 
 
 ## 7. 千问客户端v2.3.2 for linux
@@ -69,15 +82,14 @@ LoongArch生态的情况。
 Linux版千问客户端，支持登录，支持上传/下载文件
 注：需要登录才能使用完整功能
 
-网站[在这里](https://github.com/kota-rina3/hokeshi/releases/download/qwen-linux-2.3.2/com.qianwen.otohime_2.3.2-fix1_loong64.deb)
+网站[***千问***](https://github.com/kota-rina3/hokeshi/releases/download/qwen-linux-2.3.2/com.qianwen.otohime_2.3.2-fix1_loong64.deb)
 
 
 ## 8. libLoL
 
 libLoL (LoongArch on LoongArch) 是一款用于提供旧世界 ABI 兼容性的运行时。
-旧世界 ABI 常用于为龙芯提供的 Loongnix 参考发行版和统信 UOS 设计的商业软件，
-如腾讯 QQ Linux 版、金山 WPS for Linux 和龙芯浏览器等。由于这些应用程序尚未移植到新世界 ABI 上，本运行时旨在为新世界发行版用户提供运行上述应用程序的便利。
+旧世界 ABI 常用于为龙芯提供的 Loongnix 参考发行版和统信 UOS 设计的商业软件，如腾讯 QQ Linux 版、金山 WPS for Linux 和龙芯浏览器等。由于这些应用程序尚未移植到新世界 ABI 上，本运行时旨在为新世界发行版用户提供运行上述应用程序的便利。
 
-网站[在这里](https://liblol.aosc.io/)
+网站[***libLoL***](https://liblol.aosc.io/)
 
 

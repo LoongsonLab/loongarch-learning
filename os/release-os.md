@@ -3,7 +3,7 @@ title: LoongArch支持的发行版操作系统
 outline: deep
 ---
 
-# LoongArch支持的发行版操作系统[^1]
+# LoongArch支持的发行版操作系统
 
 **按照首字母大小排列**
 
@@ -13,7 +13,7 @@ outline: deep
 
 基于 musl libc 和 BusyBox 的，注重安全性的轻量级 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.alpinelinux.org)
+点击查看[镜像与具体信息](https://www.alpinelinux.org)
 
 -----
 
@@ -23,7 +23,7 @@ outline: deep
 
 基于 RPM 软件包及 APT-RPM 软件包管理前端的商业 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://en.altlinux.org/Main_Page)
+点击查看[镜像与具体信息](https://en.altlinux.org/Main_Page)
 
 -----
 
@@ -34,7 +34,7 @@ outline: deep
 
 以“简明可靠”为设计及维护目标的，面向有一定 Linux 使用经验用户的发行版
 
-这里可以查看[具体信息和下载镜像](https://aosc.io/aosc-os)
+点击查看[镜像与具体信息](https://aosc.io/aosc-os)
 
 -----
 
@@ -44,7 +44,7 @@ outline: deep
 
 试图保持易用性的，可定制的轻量级 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://loongarchlinux.lcpu.dev)
+点击查看[镜像与具体信息](https://loongarchlinux.lcpu.dev)
 
 -----
 
@@ -54,7 +54,7 @@ outline: deep
 
 用于通过交叉编译构建嵌入式 Linux 系统的工具
 
-这里可以查看[具体信息和下载镜像](https://buildroot.org/)
+点击查看[镜像与具体信息](https://buildroot.org/)
 
 -----
 
@@ -65,7 +65,7 @@ outline: deep
 
 介绍如何从源代码完全交叉编译一个 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://github.com/sunhaiyong1978/CLFS-for-LoongArch)
+点击查看[镜像与具体信息](https://github.com/sunhaiyong1978/CLFS-for-LoongArch)
 
 -----
 
@@ -76,7 +76,7 @@ outline: deep
 
 全功能的，可自由使用和分发的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.debian.org)
+点击查看[镜像与具体信息](https://www.debian.org)
 
 -----
 
@@ -86,7 +86,7 @@ outline: deep
 
 新手友好的桌面 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.deepin.org)
+点击查看[镜像与具体信息](https://www.deepin.org)
 
 -----
 
@@ -96,7 +96,7 @@ outline: deep
 
 基于 musl libc 及其他技术的前沿 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://os.ewe.moe/)
+点击查看[镜像与具体信息](https://os.ewe.moe/)
 
 -----
 
@@ -107,7 +107,7 @@ outline: deep
 
 面向开发者和内容创作者的桌面发行版
 
-这里可以查看[具体信息和下载镜像](https://github.com/fedora-remix-loongarch/releases-info)
+点击查看[镜像与具体信息](https://github.com/fedora-remix-loongarch/releases-info)
 
 -----
 
@@ -118,7 +118,7 @@ outline: deep
 
 高度可定制的，基于源代码的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.gentoo.org)
+点击查看[镜像与具体信息](https://www.gentoo.org)
 
 -----
 
@@ -128,7 +128,7 @@ outline: deep
 
 围绕 DDE 15 继续维护的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.gxde.top/)
+点击查看[镜像与具体信息](https://www.gxde.top/)
 
 -----
 
@@ -138,7 +138,7 @@ outline: deep
 
 面向行业信息化应用的商用桌面和服务器 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.kylinos.cn)
+点击查看[镜像与具体信息](https://www.kylinos.cn)
 
 -----
 
@@ -149,7 +149,7 @@ outline: deep
 
 详细介绍如何完全从源代码构建自定义的 Linux 系统
 
-这里可以查看[具体信息和下载镜像](https://www.linuxfromscratch.org/~xry111/lfs/#loongarch)
+点击查看[镜像与具体信息](https://www.linuxfromscratch.org/~xry111/lfs/#loongarch)
 
 -----
 
@@ -160,7 +160,7 @@ outline: deep
 
 防火墙操作系统 IPFire 的龙架构移植
 
-这里可以查看[具体信息和下载镜像](https://www.bpfire.net/)
+点击查看[镜像与具体信息](https://www.bpfire.net/)
 
 -----
 
@@ -170,7 +170,7 @@ outline: deep
 
 龙芯中科维护的参考 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.loongnix.cn/zh/loongnix/)
+点击查看[镜像与具体信息](https://www.loongnix.cn/zh/loongnix/)
 
 -----
 
@@ -180,7 +180,7 @@ outline: deep
 
 面向行业信息化应用的商用桌面和服务器 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.gd-linux.com/)
+点击查看[镜像与具体信息](https://www.gd-linux.com/)
 
 -----
 
@@ -190,7 +190,7 @@ outline: deep
 
 面向行业信息化应用的商用桌面和服务器 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.nfschina.com)
+点击查看[镜像与具体信息](https://www.nfschina.com)
 
 -----
 
@@ -201,7 +201,7 @@ outline: deep
 
 采用声明式包管理的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://nix4loong.cn/)
+点击查看[镜像与具体信息](https://nix4loong.cn/)
 
 -----
 
@@ -211,7 +211,7 @@ outline: deep
 
 兼容 CentOS 传统操作习惯的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://openanolis.cn/anolisos)
+点击查看[镜像与具体信息](https://openanolis.cn/anolisos)
 
 -----
 
@@ -221,7 +221,7 @@ outline: deep
 
 鸥栖社区维护的服务器操作系统
 
-这里可以查看[具体信息和下载镜像](https://opencloudos.org)
+点击查看[镜像与具体信息](https://opencloudos.org)
 
 -----
 
@@ -232,7 +232,7 @@ outline: deep
 
 面向服务器、云计算、边缘计算、嵌入式等数字基础设施的开源操作系统
 
-这里可以查看[具体信息和下载镜像](https://openeuler.org)
+点击查看[镜像与具体信息](https://openeuler.org)
 
 -----
 
@@ -243,7 +243,7 @@ outline: deep
 
 新手友好的桌面 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.openkylin.top/)
+点击查看[镜像与具体信息](https://www.openkylin.top/)
 
 -----
 
@@ -253,7 +253,7 @@ outline: deep
 
 面向嵌入式设备和路由器的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://openwrt.org)
+点击查看[镜像与具体信息](https://openwrt.org)
 
 -----
 
@@ -263,7 +263,7 @@ outline: deep
 
 面向企业虚拟化平台的全功能开源服务器管理平台，其龙架构移植由梨儿方科技完成并持续维护
 
-这里可以查看[具体信息和下载镜像](https://www.lierfang.com//#/open/third)
+点击查看[镜像与具体信息](https://www.lierfang.com//#/open/third)
 
 -----
 
@@ -274,7 +274,7 @@ outline: deep
 
 面向行业信息化应用的商用桌面和服务器 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.chinaredflag.cn/)
+点击查看[镜像与具体信息](https://www.chinaredflag.cn/)
 
 -----
 
@@ -285,7 +285,7 @@ outline: deep
 
 高度可定制的，追求纯粹 UNIX 体验的 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://www.slackware.com)
+点击查看[镜像与具体信息](https://www.slackware.com)
 
 -----
 
@@ -295,7 +295,7 @@ outline: deep
 
 基于源代码的发行版开发套件，提供为特定场景定制 Linux 发行版的工具和脚本
 
-这里可以查看[具体信息和下载镜像](https://t2linux.com)
+点击查看[镜像与具体信息](https://t2linux.com)
 
 -----
 
@@ -305,7 +305,7 @@ outline: deep
 
 面向行业信息化应用的商用桌面和服务器 Linux 发行版
 
-这里可以查看[具体信息和下载镜像](https://chinauos.com)
+点击查看[镜像与具体信息](https://chinauos.com)
 
 -----
 
@@ -315,8 +315,8 @@ outline: deep
 
 “勇豹”(Yongbao)是一个使用交叉编译的方式构建目标指令集架构操作系统发行版的项目。
 
-这里可以查看[具体信息和下载镜像](https://github.com/sunhaiyong1978/Yongbao)
+点击查看[镜像与具体信息](https://github.com/sunhaiyong1978/Yongbao)
 
 -----
 
-[^1]: https://loongfans.cn/os
+注: 以上内容参考[此处](https://loongfans.cn/os)。
