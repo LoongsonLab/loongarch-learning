@@ -75,19 +75,16 @@ outline: deep
 8. IDLE指令             
 9. SysCALL指令   
 
-
-文档的说明在[这里](https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/privilege_isa/index.html)
+文档的说明在[这里](https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/privilege_isa/index.html)。
 
 
 # LoongArch32R指令C语言模拟实现
-
 
 基于NEMU实现的LoongArch32-Reduced模拟器
 
 本项目基于南京大学的 NEMU 项目，向其中移植了龙芯架构32位精简版的支持，即 LoongArch32-Reduced(以下简称为 LA32R)。
 
-为了向 LA32R 的开发者、学习者、爱好者以及“龙芯杯”大赛提供一个类似于一生一芯项目中的 difftest 环境，我产生了向 NEMU 中移植    
-LA32R ，之后基于 difftest 框架实现 LA32R difftest 的想法。于是该项目诞生了。
+为了向 LA32R 的开发者、学习者、爱好者以及“龙芯杯”大赛提供一个类似于一生一芯项目中的 difftest 环境，我产生了向 NEMU 中移植LA32R ，之后基于 difftest 框架实现 LA32R difftest 的想法。于是该项目诞生了。
 
 NEMU 模拟器是一个轻量级的指令集模拟器，运行效果相当于一个单周期CPU。
 
