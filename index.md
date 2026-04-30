@@ -10,53 +10,39 @@ outline: deep
 ## **教学资源**
 
 - [计算机系统](/resources/courses/intro/)
-
-	主要包括一些课程的视频、课件及其实验代码等：
-	- 《计算机体系结构》—— 袁春风、鲍培明
-	- 《计算机系统实践教程》—— 袁春风、鲍培明
+   
+   - 从代码到运行，真正看懂计算机。讲清程序如何从 C 代码走到系统运行，是理解计算机系统的起点。
 
 
 - [组成原理/体系结构](/resources/courses/arch/)
 
-	主要包括一些课程的视频、课件及其实验代码等，另外包括一些教材，参考书籍等：
-	- 《计算机体系结构十讲》—— 胡伟武
-	- 《计算机体系结构六讲》—— 胡伟武
-	- 《龙架构体系结构实验课》—— 胡伟武
-
-	一些书籍与参考资料：
-	- 《计算机体系结构基础》—— 胡伟武、汪文祥等
-	- 《CPU设计实战：LoongArch版》—— 汪文祥、邢金璋
+	- 融合龙芯处理器研发经验，构建从指令系统到CPU设计的完整体系视角，迈向“能造计算机”的进阶路径。
 
 
 - [操作系统](/resources/courses/os/)
     
-    主要包括一些课程的视频、课件、教材及其实验代码等：
-    - 《深入理解操作系统》—— 宫晓利
-    - 《操作系统设计与实现（基于 LoongArch 架构）》—— 周庆国
-    - 《操作系统内核构建》—— 张羽、郭琼、张福新等
+    - 汇集 MaQue、NPUcore、Ucore 等多种教学操作系统，配套教材与实验，贯通从理解原理到动手实现的学习过程。
 
 
 - [编译原理](/resources/courses/compiler/)
 	
-	主要包括一些课程的视频、课件、教材及其实验代码等：
-	- 《编译系统设计与实现》—— 李诚
+	- 基于龙芯等指令集实践，从前端到后端完整实现编译器，掌握真实工程中的编译技术。
 
 ## **竞赛资源**
 
 - [操作系统设计赛](/competitions/os-design/)
   
-  有关往年的操作系统相关内容：
-  - 往年的比赛的OS Kernel
-  - 往年比赛的优秀作品
-  - 往年比赛的报告
-  - 往年问题的FAQ
+  - 历年参赛OS内核
+  - 历年获奖作品
+  - 历年培训报告
+  - 历年龙芯赛题
+  - 常见问题FAQ
+  - 龙架构与操作系统底层的交互
 
 - [编译系统设计赛](/competitions/compiler-design/)
 
-  有关往年的编译相关内容：
-  - 往年的比赛的优秀作品
-  - 往年比赛的报告
-  - 往年问题的FAQ
+  - 历年培训报告
+  - 历年龙芯赛题
 
 
 ## **龙架构相关文档**
@@ -86,7 +72,7 @@ outline: deep
 	- Open-500：一个实现了LoongArch32R的五级流水
 
 
-## **LoongArch 工具链**
+## **龙架构工具链**
 
 - [LoongArch工具链](/toolchain/compiler)
 	
@@ -111,7 +97,7 @@ outline: deep
 - [UEFI](/toolchain/uefi)
 
 
-## **LoongArch开发版**
+## **龙架构开发平台**
 
 涉及常用的开发版相关资料
 
@@ -122,7 +108,7 @@ outline: deep
   - [2k3000开发板](/platform/2k3000)
 
 
-## **操作系统**
+## **龙架构操作系统**
 
 [支持龙架构的发行版](/os/release-os)
 
@@ -130,7 +116,7 @@ outline: deep
 
 [基于Rust的Kernel](/os/os-kernel)
 
-## **LoongArch相关的仓库**
+## **龙架构相关的仓库**
 
 龙芯实验室:https://github.com/LoongsonLab
 
@@ -143,8 +129,6 @@ outline: deep
 龙芯应用合作社: https://app.loongapps.cn
 
 龙芯开源社区:http://www.loongnix.cn/zh/proj/
-
-龙芯爱好者社区:https://www.loongbbs.cn/
 
 龙芯应用合作社: https://app.loongapps.cn/
 
@@ -162,10 +146,6 @@ loong64: https://github.com/loong64
 
 loongson生态创新中心:https://gitee.com/cn-loongson
 
-
-## **资讯动态**
-
-最近更新日期：2026-3-25
 
 
 ---

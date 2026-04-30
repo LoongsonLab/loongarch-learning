@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // 须与 GitHub 仓库名在 Pages URL 中的路径完全一致（大小写敏感，错则 CSS/JS 全部 404）
   base: '/loongarch-learning/',
-  title: '龙芯实验室',
+  title: '龙架构核心系统能力资源',
   description: '龙芯实验室介绍',
   // 关闭深浅色切换，站点固定为浅色模式
   appearance: false,
@@ -50,14 +50,22 @@ export default defineConfig({
             text: '操作系统设计赛',
             collapsed: false,
             items: [
-              { text: '往年的比赛的OS Kernel', link: '/competitions/os-design/kernel/' },
-              { text: '往年比赛的优秀作品', link: '/competitions/os-design/cases/' },
-              { text: '往年比赛的报告', link: '/competitions/os-design/training-reports/' },
-              { text: '往年龙芯赛题', link: '/competitions/os-design/past-loongson-topics/' },
-              { text: '往年问题的FAQ', link: '/competitions/os-design/faq/' },
+              { text: '历年参赛OS内核', link: '/competitions/os-design/kernel/' },
+              { text: '历年获奖作品', link: '/competitions/os-design/cases/' },
+              { text: '历年培训报告', link: '/competitions/os-design/training-reports/' },
+              { text: '历年龙芯赛题', link: '/competitions/os-design/past-loongson-topics/' },
+              { text: '常见问题FAQ', link: '/competitions/os-design/faq/' },
+              { text: '龙架构与操作系统底层的交互', link: '/competitions/os-design/arch-os-interaction/' },
             ],
           },
-          { text: '编译系统设计赛', link: '/competitions/compiler-design/' },
+          {
+            text: '编译系统设计赛',
+            collapsed: false,
+            items: [
+              { text: '历年培训报告', link: '/competitions/compiler-design/training-reports/' },
+              { text: '历年龙芯赛题', link: '/competitions/compiler-design/past-loongson-topics/' },
+            ],
+          },
         ],
       },
       
@@ -88,8 +96,8 @@ export default defineConfig({
         text: '龙架构开发平台',
         collapsed: false,
         items: [
-          { text: '2k1000LA星云版', link: '/platform/2k1000la' },
-          { text: '2k0300蜂鸟', link: '/platform/2k0300' },
+          { text: '2k1000LA星云板', link: '/platform/2k1000la' },
+          { text: '2k0300蜂鸟板', link: '/platform/2k0300' },
           { text: '2k3000开发板', link: '/platform/2k3000' },
         ],
       },
@@ -98,9 +106,9 @@ export default defineConfig({
         text: '龙架构操作系统',
         collapsed: false,
         items: [
-          { text: '支持龙架构的发行版', link: '/os/release-os' },
           { text: 'LoongArch开源Kernel', link: '/os/os-kernel' },
           { text: '基于Rust的Kernel', link: '/os/os-kernel' },
+          { text: '支持龙架构的发行版', link: '/os/release-os' },
         ],
       },
       
@@ -134,6 +142,35 @@ export default defineConfig({
       },
 
     ],
+
+    // 全站本地搜索（索引构建后的正文，无需 Algolia）
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索',
+            buttonAriaLabel: '打开搜索',
+          },
+          modal: {
+            displayDetails: '显示详情',
+            resetButtonTitle: '清除',
+            backButtonTitle: '返回',
+            noResultsText: '未找到相关结果',
+            footer: {
+              selectText: '跳转',
+              selectKeyAriaLabel: '按 Enter 打开',
+              navigateText: '切换结果',
+              navigateUpKeyAriaLabel: '向上',
+              navigateDownKeyAriaLabel: '向下',
+              closeText: '关闭',
+              closeKeyAriaLabel: '按 Esc 关闭',
+            },
+          },
+        },
+      },
+    },
+
     socialLinks: [],
   },
 })

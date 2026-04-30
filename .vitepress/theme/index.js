@@ -30,7 +30,7 @@ export default {
           padding-top: 10px;
         }
         .VPNavBarTitle .title .logo {
-          margin-right: 12px;
+          margin-right: 4px;
           height: 28px;
           width: auto;
           object-fit: contain;

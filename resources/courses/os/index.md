@@ -37,18 +37,16 @@ outline: deep
 
 ### 教材
 
-| 封面 | 书名 | 作者 | 购买链接 |
-|------|------|------|----------|
-| <img src="/book-OS-DesignImpl.jpg" alt="操作系统设计与实现" class="book-cover" /> | 《操作系统设计<br/>基于LoongArch架构》 | 周庆国、杨虎斌、刘刚<br/>陈玉聪、张福新 | [点击购买](https://item.jd.com/14559546.html) |
+| 封面 | 书名 | 作者 | 购买链接 | 配套实验代码 |
+|------|------|------|----------|----------|
+| <img src="/book-OS-DesignImpl.jpg" alt="操作系统设计与实现" class="book-cover" /> | 《操作系统设计<br/>基于LoongArch架构》 | 周庆国、杨虎斌、刘刚<br/>陈玉聪、张福新 | [点击购买](https://item.jd.com/14559546.html) | [点击获取](https://gitee.com/dslab-lzu/maqueos) |
 
 ### 配套资源
 
-| 版本 | 类型 | 链接 |
-|------|------|------|
-| 2021 | 源代码 | [点击获取](https://gitee.com/dslab-lzu/maqueos) |
-| 2021 | 实验指导书 | 咨询获取 |
-| 2023 | 源代码 | 咨询获取 |
-| 2023 | 实验指导书 | 咨询获取 |
+| 类型 | 链接 |
+|------|------|
+| 仓库地址 | [点击跳转](https://github.com/LoongsonLab/maqueos/) |
+| 实验指导书 | [点击跳转](https://github.com/LoongsonLab/maqueos/blob/main/doc/%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf) |
 
 ## 课程三：《操作系统内核构建》
 
