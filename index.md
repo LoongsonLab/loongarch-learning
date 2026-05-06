@@ -101,11 +101,9 @@ outline: deep
 
 ## **龙架构操作系统**
 
-[支持龙架构的发行版](/os/release-os)
-
 [LoongArch开源Kernel](/os/os-kernel)
 
-[基于Rust的Kernel](/os/os-kernel)
+[支持龙架构的linux发行版](/os/release-os)
 
 ## **龙架构相关的仓库**
 

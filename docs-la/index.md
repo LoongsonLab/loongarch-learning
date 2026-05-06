@@ -84,26 +84,3 @@ outline: deep
   目前PDF版本在[这里](https://github.com/loongson/la-asm-manual/releases/download/release-1.1/la-asm-manual-v1.1.pdf)下载。
 
   整个项目的仓库在[这里](https://github.com/loongson/la-asm-manual)。
-
-
-------
-
-## 下面是一些处理器相关的手册：
-
-- [**龙芯3C6000**](https://loongson.cn/uploads/images/2026022508441776242.%E9%BE%99%E8%8A%AF3C6000%E5%AF%84%E5%AD%98%E5%99%A8%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C_V1.0.pdf)
-
-- [**龙芯3A6000**](https://loongson.cn/uploads/images/2024072510054986439.Loongson3A6000%20user%20book_V1.2.pdf)
-
-- [**龙芯3A5000**](https://loongson.cn/uploads/images/2022051617120455270.%E9%BE%99%E8%8A%AF3A5000_3B5000%E5%A4%84%E7%90%86%E5%99%A8%E5%AF%84%E5%AD%98%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.pdf)
-
-- [**龙芯2K2000**](https://loongson.cn/uploads/images/2025081209095325652.%E9%BE%99%E8%8A%AF2K2000%E5%A4%84%E7%90%86%E5%99%A8%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.03.pdf)
-
-- [**龙芯2K1000LA**](https://loongson.cn/uploads/images/2022090113542571398.%E9%BE%99%E8%8A%AF2K1000LA%E5%A4%84%E7%90%86%E5%99%A8%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.pdf)
-
-- [**龙芯2K0500**](https://loongson.cn/uploads/images/2023042109174127550.%E9%BE%99%E8%8A%AF2K0500%E5%A4%84%E7%90%86%E5%99%A8%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_v1.0.pdf)
-
-- [**龙芯2K0300**](https://loongson.cn/uploads/images/2025060909243029508.%E9%BE%99%E8%8A%AF2K0300%E5%A4%84%E7%90%86%E5%99%A8%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.01.pdf)
-
-- **2K3000**: 待补充
-
-
