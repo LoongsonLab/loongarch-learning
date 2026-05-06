@@ -59,20 +59,7 @@ outline: deep
   [其他参考手册](/docs-la/others-ref)
 	- 还要其他相关文档，具体可进入相关页查看
 
-  [LoongArch64指令C语言实现](/docs-la/others-la64-insn)
-	- 模拟器实现了LoongArch64的相关指令
-	- 如果官方手册的指令描述不清楚，可查看相关的C实现
-
-- [LoongArch相关IP](/practice/ip)
-	
-	主要涉及和龙架构相关的一些IP核：
-	- OpenC910：具有先进的12级流水线，乱序执行的超标量处理器
-	- LabCore164：五级流水线，支持浮点
-	- ChipLab：loongArch32R的一个实现SOC
-	- Open-500：一个实现了LoongArch32R的五级流水
-
-
-## **龙架构工具链**
+## **龙架构系统组件**
 
 - [LoongArch工具链](/toolchain/compiler)
 	
@@ -84,6 +71,10 @@ outline: deep
 	- Rust
 	- Go
 	- .NET等
+
+- [LoongArch64模拟器](/docs-la/others-la64-insn)
+	- 模拟器实现了LoongArch64的相关指令
+	- 如果官方手册的指令描述不清楚，可查看相关的C实现
 
 - [LIBC库](/toolchain/libc)：
   常用的C库：

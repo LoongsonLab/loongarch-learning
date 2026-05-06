@@ -63,7 +63,7 @@ outline: deep
   - 目标指令架构Target ISA
   - 配置目标ABI
   - C/C++一些预处理器的宏定义等
-  - 编译器的一下选项说明
+  - 编译器的一些选项说明
 
 
   目前PDF版本在[这里](https://github.com/loongson/la-toolchain-conventions/releases/download/releases%2Fv1.2/la-tc-v1.2.pdf)下载。
@@ -77,7 +77,7 @@ outline: deep
   - 寄存器的使用
   - 寻址模式
   - 汇编语言的指示符
-  - 一些内敛汇编
+  - 一些内联汇编
   - 龙架构的伪指令（宏指令）
   - 等等内容
 
