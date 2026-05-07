@@ -16,7 +16,7 @@ export default defineConfig({
       {
         component: 'NavLinkWithIcon',
         props: {
-          text: 'LA资源总览',
+          text: '资源总览',
           link: '/',
           image: '/book.png',
         },
@@ -75,16 +75,15 @@ export default defineConfig({
         items: [
           { text: '官方参考手册', link: '/docs-la/' },
           { text: '其他参考手册', link: '/docs-la/others-ref' },
-          { text: '指令C语言实现', link: '/docs-la/others-la64-insn' },
-          { text: 'LoongArch相关IP', link: '/practice/ip' },
         ],
       },
       
       {
-        text: '龙架构工具链',
+        text: '龙架构系统组件',
         collapsed: false,
         items: [
-          { text: '常用工具链', link: '/toolchain/compiler' },
+          { text: 'LoongArch工具链', link: '/toolchain/compiler' },
+          { text: 'LoongArch模拟器', link: '/docs-la/others-la64-insn' },
           { text: 'libc库', link: '/toolchain/libc' },
           { text: 'Linux内核', link: '/toolchain/linux-kernel' },
           { text: 'U-boot', link: '/toolchain/uboot' },
@@ -107,8 +106,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'LoongArch开源Kernel', link: '/os/os-kernel' },
-          { text: '基于Rust的Kernel', link: '/os/os-kernel' },
-          { text: '支持龙架构的发行版', link: '/os/release-os' },
+          { text: '支持龙架构的linux发行版', link: '/os/release-os' },
         ],
       },
       
