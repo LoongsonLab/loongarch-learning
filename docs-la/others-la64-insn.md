@@ -3,7 +3,7 @@ title: LoongArch指令C语言实现
 outline: deep
 ---
 
-# LoongArch64指令C语言模拟实现
+# LoongArch64模拟器
 
 ## **LA_EMU模拟器**
 
