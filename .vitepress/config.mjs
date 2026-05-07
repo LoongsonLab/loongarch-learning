@@ -122,9 +122,8 @@ export default defineConfig({
         text: '其他杂项',
         collapsed: false,
         items: [
-          { text: '龙架构相关的论坛', link: '/misc/loong64-form' },
-          { text: '开发者相关', link: '/misc/developer' },
-          { text: '其他趣闻', link: '/misc/news' },
+          { text: '交流论坛', link: '/misc/loong64-form' },
+          { text: '资源网站', link: '/misc/developer' },
         ],
       },
 
