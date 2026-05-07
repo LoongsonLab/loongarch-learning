@@ -100,6 +100,8 @@ outline: deep
 
 ## **龙架构操作系统**
 
+[LoongArch教学OS](/os/os-edu)
+
 [LoongArch开源Kernel](/os/os-kernel)
 
 [支持龙架构的linux发行版](/os/release-os)
