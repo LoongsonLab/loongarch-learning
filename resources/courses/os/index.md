@@ -27,7 +27,7 @@ outline: deep
 |------|------|
 | 源代码 | [点击获取](https://github.com/NKU-EmbeddedSystem/OSbook) |
 
-## 课程二：操作系统设计与实现（基于 LoongArch 架构）
+## 课程二：操作系统设计与实现——Maque教学操作系统
 
 ### 课程视频
 
@@ -48,7 +48,7 @@ outline: deep
 | 仓库地址 | [点击跳转](https://github.com/LoongsonLab/maqueos/) |
 | 实验指导书 | [点击跳转](https://github.com/LoongsonLab/maqueos/blob/main/doc/%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf) |
 
-## 课程三：《操作系统内核构建》
+## 课程三：《操作系统内核构建》——NPUcore教学操作系统
 
 ### 教材
 
@@ -62,6 +62,37 @@ outline: deep
 |------|------|
 | 源代码 | [点击获取](https://gitlab.eduxiji.net/T202410699992491/oskernel2024-npucore) |
 
+
+## 课程四：Ucore教学操作系统
+
+### 课程视频
+
+<div class="os-table-single-line">
+
+| 课程标题 | 链接 | 配套课件PPT | 说明 |
+|----------|------|------|-----------|
+| Ucore for LoongArch32操作系统实验 | [点击观看](https://space.bilibili.com/12553542/lists/2666036?type=series) | [点击跳转](https://github.com/LoongsonLab/ucore-loongarch32/tree/master/doc) | 重庆大学陈咸彰老师团队开发 |
+
+</div>
+
+### 配套资源
+
+| 类型 | 链接 |
+|------|------|
+| 实验指导书 | [点击获取](https://cyyself.github.io/ucore_la32_docs/) |
+| uCore移植实验代码 | [点击获取](https://github.com/LoongsonLab/ucore-loongarch64) |
+| 头哥实验平台 | [点击获取](https://www.educoder.net/paths/gsnk6w9t) |
+
+
+## 课程四：MOS教学操作系统
+
+### 课程资源
+
+| 类型 | 链接 |
+|------|------|
+| 实验教学PPT | [点击获取](https://github.com/LoongsonLab/buaa-oskernel-for-loongarch/tree/main/doc) |
+| 实验指导书 | [点击获取](https://github.com/LoongsonLab/buaa-oskernel-for-loongarch/blob/main/doc/LA32R%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.pdf) |
+| 实验代码 | [点击获取](https://github.com/LoongsonLab/buaa-oskernel-for-loongarch/tree/main/lab1) |
 </div>
 
 如在学习过程中遇到问题或有改进建议，欢迎通过 [问题反馈](/feedback/) 联系我们。
@@ -77,5 +108,23 @@ outline: deep
 }
 .os-nowrap table td:nth-child(4) {
   white-space: normal;
+}
+.os-nowrap .os-table-single-line table th,
+.os-nowrap .os-table-single-line table td {
+  white-space: nowrap;
+}
+
+/* 去掉 VitePress 默认在 table 上的横向滚动条，并压缩排版以尽量单行铺满内容区 */
+.vp-doc .os-table-single-line table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: visible;
+}
+
+.vp-doc .os-table-single-line th,
+.vp-doc .os-table-single-line td {
+  padding: 6px 8px;
+  font-size: 0.8125rem;
 }
 </style>
