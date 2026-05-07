@@ -10,8 +10,6 @@ outline: deep
 - 教学操作系统。
 - 开源操作系统。
 
-## LoongArch架构操作系统(OS)类课程
-
 基于LoongArch架构的操作系统课程，其开源代码汇总如下：
 
 |  课程   | 名称  | 链接 |
@@ -23,6 +21,25 @@ outline: deep
 | 操作系统内核构建实践实例NPUcore| NPUcore| [仓库地址](https://github.com/LoongsonLab/npucore-loongarch64) |
 | NJUos：计算机操作系统| NJUos | [仓库地址](https://github.com/bzy666-666/NJU-OS-loongarch) |
 | MOS：操作系统课程实验| MOS | [仓库地址](https://github.com/chhss17/buaa_mos_la64) |
+
+支持LoongArch架构的开源操作系统，汇总如下：
+
+|  名称  | 链接 |
+|  :---:  | :---: |
+| Arceos| [仓库地址](https://github.com/Starry-OS/arceos.git)|
+| StarryOS| [仓库地址](https://github.com/Starry-OS/StarryOS.git)|
+| NoAxiom-OS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510336995214-3416.git)|
+| Chronix| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995568-2656.git)|
+| Nighthawk OS | [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995755-1211.git)|
+| RocketOS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510213995926-3349.git)|
+| Del0n1x| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995600-3446.git)|
+| asterinas| [仓库地址](https://github.com/asterinas/asterinas)|
+| DragonOS| [仓库地址](https://github.com/DragonOS-Community/DragonOS.git)|
+| RT-Thread| [仓库地址](https://github.com/LoongsonLab/rt-thread.git)|
+| NXOS| [仓库地址](https://gitee.com/BookOS/nxos.git)|
+| ByteOS| [仓库地址](https://github.com/Byte-OS/ByteOS.git)|
+
+## LoongArch架构操作系统(OS)类课程
 
 ### 课程一、操作系统设计与实现：基于MaQue教学操作系统
 
@@ -178,23 +195,6 @@ outline: deep
 
 
 ## LoongArch支持的OS kernel
-
-支持LoongArch架构的开源操作系统，汇总如下：
-
-|  名称  | 链接 |
-|  :---:  | :---: |
-| Arceos| [仓库地址](https://github.com/Starry-OS/arceos.git)|
-| StarryOS| [仓库地址](https://github.com/Starry-OS/StarryOS.git)|
-| NoAxiom-OS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510336995214-3416.git)|
-| Chronix| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995568-2656.git)|
-| Nighthawk OS | [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995755-1211.git)|
-| RocketOS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510213995926-3349.git)|
-| Del0n1x| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995600-3446.git)|
-| asterinas| [仓库地址](https://github.com/asterinas/asterinas)|
-| DragonOS| [仓库地址](https://github.com/DragonOS-Community/DragonOS.git)|
-| RT-Thread| [仓库地址](https://github.com/LoongsonLab/rt-thread.git)|
-| NXOS| [仓库地址](https://gitee.com/BookOS/nxos.git)|
-| ByteOS| [仓库地址](https://github.com/Byte-OS/ByteOS.git)|
 
 ### 1. 清华大学 Arceos
 使用Rust开发的kernel, 单内核操作系统。将进程和应用APP编译到一个文件中，共用地址空间。
