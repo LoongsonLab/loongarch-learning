@@ -181,8 +181,8 @@ outline: deep
 
 支持LoongArch架构的开源操作系统，汇总如下：
 
-|  名称   | 特性  | 链接 |
-|  :---:  | :---:  | :---: |
+|  名称  | 链接 |
+|  :---:  | :---: |
 | Arceos| [仓库地址](https://github.com/Starry-OS/arceos.git)|
 | StarryOS| [仓库地址](https://github.com/Starry-OS/StarryOS.git)|
 | NoAxiom-OS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510336995214-3416.git)|
