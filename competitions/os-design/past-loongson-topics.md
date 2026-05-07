@@ -1,5 +1,5 @@
 ---
-title: 往年龙芯赛题
+title: 历年龙芯赛题
 outline: deep
 ---
 
@@ -33,7 +33,7 @@ outline: deep
 
 
 
-## 2024 年
+## 2024年
 
 <div class="past-loongson-topics-page">
 
@@ -45,8 +45,6 @@ outline: deep
     proj94 · 开源操作系统的 LoongArch 移植 — Google Zircon 内核
   </a>
 </summary>
-
-<p>赛题仓库：<a href="https://github.com/oscomp/proj94-la-zircon" target="_blank" rel="noopener noreferrer">点击跳转</a></p>
 
 <p class="past-topic-intro">Zircon 是谷歌新一代开源操作系统 Fuchsia 的内核。</p>
 

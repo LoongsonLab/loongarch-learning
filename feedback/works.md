@@ -11,7 +11,7 @@ outline: deep
 
 <div class="feedback-section works-apply">
   <div class="feedback-box works-apply-full">
-    <span class="feedback-label">Boss 直聘 · 本岗位</span>
+    <span class="feedback-label">Boss 直聘 </span>
     <a href="https://m.zhipin.com/mpa/html/weijd/weijd-job/9bef85f5e3af423e0nZ82967GFBX?date8=20260429&sid=qr_self_jd&openWeapp=1" target="_blank" rel="noopener noreferrer" class="feedback-button">立即投递</a>
   </div>
 </div>

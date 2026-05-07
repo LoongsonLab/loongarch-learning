@@ -55,7 +55,6 @@ export default defineConfig({
               { text: '历年培训报告', link: '/competitions/os-design/training-reports/' },
               { text: '历年龙芯赛题', link: '/competitions/os-design/past-loongson-topics/' },
               { text: '常见问题FAQ', link: '/competitions/os-design/faq/' },
-              { text: '龙架构与操作系统底层的交互', link: '/competitions/os-design/arch-os-interaction/' },
             ],
           },
           {

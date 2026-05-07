@@ -37,7 +37,6 @@ outline: deep
   - 历年培训报告
   - 历年龙芯赛题
   - 常见问题FAQ
-  - 龙架构与操作系统底层的交互
 
 - [编译系统设计赛](/competitions/compiler-design/)
 

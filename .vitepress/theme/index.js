@@ -9,6 +9,7 @@ import './training-reports.css'
 import './kernel-page.css'
 import './past-loongson-topics.css'
 import './cases-page.css'
+import './docs-la-index.css'
 
 export default {
   extends: DefaultTheme,
