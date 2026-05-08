@@ -16,7 +16,9 @@ outline: deep
 ## 龙芯开源社区
 
 <div class="dlmi-actions">
-  <a class="dlmi-chip dlmi-chip--pdf" href="https://www.loongnix.cn/zh/" target="_blank" rel="noopener noreferrer"><span class="dlmi-chip__kind">链接</span><span class="dlmi-chip__text">点击跳转</span></a>
+  <a class="dlmi-chip dlmi-chip--link" href="https://www.loongnix.cn/zh/" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
 </div>
 
 龙芯开源社区是龙芯处理器的基础软件生态建设平台，包含有：

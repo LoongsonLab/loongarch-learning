@@ -78,7 +78,7 @@ export default defineConfig({
       },
       
       {
-        text: '龙架构系统组件',
+        text: '龙架构基础软件',
         collapsed: false,
         items: [
           { text: 'LoongArch工具链', link: '/toolchain/compiler' },

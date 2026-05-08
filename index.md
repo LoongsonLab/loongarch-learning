@@ -58,7 +58,7 @@ outline: deep
   [其他参考手册](/docs-la/others-ref)
 	- 还要其他相关文档，具体可进入相关页查看
 
-## **龙架构系统组件**
+## **龙架构基础软件**
 
 - [LoongArch工具链](/toolchain/compiler)
 	
