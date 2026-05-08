@@ -55,8 +55,13 @@ outline: deep
 	- 工具链规约手册
 	- 龙架构汇编语言编程手册-2024-10版本
 	
-  [其他参考手册](/docs-la/others-ref)
-	- 还要其他相关文档，具体可进入相关页查看
+- [LA32R指令集学习指导手册](/docs-la/others-ref)
+
+  主要涉及LA32R指令说明，以及汇编编程简介
+
+-	[LoongArch架构与OS交互](/competitions/os-design/os-interaction.md)
+
+	主要介绍LoongArch架构底层与操作系统内核交互原理与实现细节
 
 ## **龙架构基础软件**
 
@@ -72,8 +77,10 @@ outline: deep
 	- .NET等
 
 - [LoongArch64模拟器](/docs-la/others-la64-insn)
-	- 模拟器实现了LoongArch64的相关指令
-	- 如果官方手册的指令描述不清楚，可查看相关的C实现
+	主要是LoongArch架构下模拟器介绍与说明：
+	- LA_EMU
+	- LA32r_QEMU
+	- LoongArch_QEMU
 
 - [LIBC库](/toolchain/libc)：
   常用的C库：
@@ -84,12 +91,13 @@ outline: deep
 
 - [Linux内核](/toolchain/linux-kernel)
 - [U-boot](/toolchain/uboot)
-- [UEFI](/toolchain/uefi)
 
 
 ## **龙架构开发平台**
 
 涉及常用的开发版相关资料
+
+	- [模拟器](/platform/qemu)
 
   - [2k1000LA星云板](/platform/2k1000la)
 

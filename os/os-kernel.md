@@ -7,31 +7,28 @@ outline: deep
 
 支持LoongArch架构的开源操作系统，汇总如下：
 
-|  名称  | 链接 |
-|  :---:  | :---: |
-| Arceos| [仓库地址](https://github.com/Starry-OS/arceos.git)|
-| StarryOS| [仓库地址](https://github.com/Starry-OS/StarryOS.git)|
-| asterinas| [仓库地址](https://github.com/asterinas/asterinas)|
-| DragonOS| [仓库地址](https://github.com/DragonOS-Community/DragonOS.git)|
-| RT-Thread| [仓库地址](https://github.com/LoongsonLab/rt-thread.git)|
-| NXOS| [仓库地址](https://gitee.com/BookOS/nxos.git)|
-| ByteOS| [仓库地址](https://github.com/Byte-OS/ByteOS.git)|
+|  名称  | 特性 | 链接 |
+|  :---: | :---: | :---: |
+| Arceos| Rust语言开发；单内核 |[仓库地址](https://github.com/Starry-OS/arceos.git)|
+| StarryOS| Rust语言开发；兼容Linux系统调用 |[仓库地址](https://github.com/Starry-OS/StarryOS.git)|
+| asterinas| Rust语言开发；高安全性 |[仓库地址](https://github.com/asterinas/asterinas)|
+| DragonOS| 面向云计算轻量化 |[仓库地址](https://github.com/DragonOS-Community/DragonOS.git)|
+| RT-Thread| 物联网领域专用 |[仓库地址](https://github.com/LoongsonLab/rt-thread.git)|
+| NXOS| 跨平台、高性能|[仓库地址](https://gitee.com/BookOS/nxos.git)|
+| ByteOS| Rust语言开发；小型OS|[仓库地址](https://github.com/Byte-OS/ByteOS.git)|
 
-
-## LoongArch支持的OS kernel
-
-### 1. 清华大学 Arceos
+##	清华大学 Arceos
 使用Rust开发的kernel, 单内核操作系统。将进程和应用APP编译到一个文件中，共用地址空间。
 
 仓库[在此](https://github.com/Starry-OS/arceos.git)
 
 
-### 2. 清华大学 StarryOS
+## 	清华大学 StarryOS
 使用Rust开发的kernel，兼容Linux系统调用（部分还在完善中），复用了ArceOS代码。
 
 仓库[在此](https://github.com/Starry-OS/StarryOS.git)
 
-### 8. asterinas(星绽)
+##	asterinas(星绽)
 
 星绽（英文名：Asterinas）是一个*安全*、*快速*、*通用*的操作系统内核。
 它提供于Linux相同的ABI，可无缝运行Linux应用，
@@ -55,7 +52,7 @@ outline: deep
 
 仓库[在此](https://github.com/asterinas/asterinas)
 
-### 9. DragonOS
+## 	DragonOS
 
 DragonOS龙操作系统是一个面向云计算轻量化场景的，完全自主内核的，提供Linux二进制兼容性的64位操作系统，旨在为容器化工作负载提供轻量级、高性能的解决方案。它使用Rust语言进行开发，以提供更好的可靠性。
 
@@ -70,7 +67,7 @@ DragonOS目前在社区驱动下正在快速发展中，目前DragonOS已经实�
 仓库[在此](https://github.com/DragonOS-Community/DragonOS.git)
 
 
-### 10. RT-Thread
+## RT-Thread
 RT-Thread诞生于2006年，是一款以开源、中立、社区化发展起来的物联网操作系统。 RT-Thread主要采用 C 语言编写，浅显易懂，且具有方便移植的特性（可快速移植到多种主流 MCU 及模组芯片上）。RT-Thread把面向对象的设计方法应用到实时系统设计中，使得代码风格优雅、架构清晰、系统模块化并且可裁剪性非常好。
 
 RT-Thread有完整版和Nano版，对于资源受限的微控制器（MCU）系统，可通过简单易用的工具，裁剪出仅需要 3KB Flash、1.2KB RAM 内存资源的 NANO 内核版本；而相对资源丰富的物联网设备，可使用RT-Thread完整版，通过在线的软件包管理工具，配合系统配置工具实现直观快速的模块化裁剪，并且可以无缝地导入丰富的软件功能包，实现类似 Android 的图形界面及触摸滑动效果、智能语音交互效果等复杂功能。
@@ -80,7 +77,7 @@ RT-Thread有完整版和Nano版，对于资源受限的微控制器（MCU）系�
 ***LoongArch*** 支持的版本[仓库地址](https://github.com/LoongsonLab/rt-thread.git)
 
 
-### 11. NXOS
+## NXOS
 NXOS是Next XBook Operating System的意思，是一个跨平台的简洁、高性能、高稳定性的支持多核的操作系统内核，它将应用于桌面操作系统领域，服务器操作系统领域以及移动终端操作系统领域。
 
 我们以简洁、高效、稳定为核心，用比较简洁且高效的方式去实现一些功能，去掉一些复杂，冗杂的功能，化繁为简。
@@ -92,7 +89,7 @@ NXOS是Next XBook Operating System的意思，是一个跨平台的简洁、高�
 仓库[在此](https://gitee.com/BookOS/nxos.git)
 
 
-### 12. ByteOS
+## ByteOS
 
 使用Rust开发的小型操作系统，支持***LoongArch***架构。
 

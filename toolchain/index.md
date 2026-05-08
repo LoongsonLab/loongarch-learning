@@ -3,7 +3,7 @@ title: LA 工具链
 outline: deep
 ---
 
-# LA 工具链
+# LoongArch 基础软件
 
 LoongArch 开发与教学常用工具链索引，点击下方链接跳转。
 

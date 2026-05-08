@@ -55,6 +55,7 @@ export default defineConfig({
               { text: '历年培训报告', link: '/competitions/os-design/training-reports/' },
               { text: '历年龙芯赛题', link: '/competitions/os-design/past-loongson-topics/' },
               { text: '常见问题FAQ', link: '/competitions/os-design/faq/' },
+              { text: 'LoongArch架构与OS交互', link: '/competitions/os-design/os-interaction.md' },
             ],
           },
           {
@@ -73,7 +74,8 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '官方参考手册', link: '/docs-la/' },
-          { text: '其他参考手册', link: '/docs-la/others-ref' },
+          { text: 'LA32R指令集学习指导手册', link: '/docs-la/others-ref' },
+          { text: 'LoongArch架构与OS交互', link: '/competitions/os-design/os-interaction.md' },
         ],
       },
       
@@ -86,7 +88,6 @@ export default defineConfig({
           { text: 'libc库', link: '/toolchain/libc' },
           { text: 'Linux内核', link: '/toolchain/linux-kernel' },
           { text: 'U-boot', link: '/toolchain/uboot' },
-          { text: 'UEFI', link: '/toolchain/uefi' },
         ],
       },
       
@@ -94,6 +95,7 @@ export default defineConfig({
         text: '龙架构开发平台',
         collapsed: false,
         items: [
+          { text: '模拟器', link: '/platform/qemu.md' },
           { text: '2k1000LA星云板', link: '/platform/2k1000la' },
           { text: '2k0300蜂鸟板', link: '/platform/2k0300' },
           { text: '2k3000开发板', link: '/platform/2k3000' },

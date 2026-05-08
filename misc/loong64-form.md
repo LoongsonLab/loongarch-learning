@@ -5,12 +5,23 @@ outline: deep
 
 # 龙架构技术交流论坛
 
+---
+
+<div class="form">
+
 此处收集一些面向龙架构的技术交流论坛，汇总如下：
 
+<section>
 
-## 龙芯爱好者社区
+## 龙芯爱好者论坛
 
-龙芯爱好者社区，旨在为想要在龙架构生态中进行软硬件开发的工程师们提供帮助与支持，包含有：
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://www.loongbbs.cn/" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
+
+龙芯爱好者论坛，旨在为想要在龙架构生态中进行软硬件开发的工程师们提供帮助与支持，包含有：
 - 操作系统
 - 龙架构教学与竞赛
 - 硬件与固件
@@ -18,10 +29,17 @@ outline: deep
 
 以及其他方面的讨论交流。
 
-网址链接：https://www.loongbbs.cn/
+</section>
 
+<section>
 
 ## 龙芯爱好者社区
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://loongfans.cn/" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
 
 龙芯爱好者社区是一个由第三方爱好者、行业人员与学生组成的，致力于龙芯（龙架构）软硬件生态建设的互联网社区。
 
@@ -30,9 +48,17 @@ outline: deep
 - 数据材料。包含有芯片规格、产品规格、软硬件兼容数据等信息。
 - 社区资源。包含有交流论坛、技术分享等内容。
 
-社区网址链接：https://loongfans.cn/
+</section>
+
+<section>
 
 ## 龙架构悬赏与实习机会
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://loongfans.cn/jobs" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
 
 社区悬赏网站。
 
@@ -40,9 +66,17 @@ outline: deep
 
 网站经常公布社区实习机会，有需求的同学可以主动联系。
 
-网站[***龙架构悬赏***](https://loongfans.cn/jobs)
+</section>
+
+<section>
 
 ## loong64
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://github.com/loong64" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
 
 LoongArch64 生态分享与讨论区，包含有：
 - tensorflow LoongArch64 支持
@@ -51,9 +85,17 @@ LoongArch64 生态分享与讨论区，包含有：
 
 以及其他开源应用
 
-帐号主页链接：https://github.com/loong64
+</section>
+
+<section>
 
 ## 咱龙了吗
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://areweloongyet.com/docs/intro" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
 
 这里是社区建立的一个关于龙架构的咨询网站，你可以跟踪一些开源软件的上游项目进展。
 
@@ -61,9 +103,17 @@ LoongArch64 生态分享与讨论区，包含有：
 
 网站完全由社区爱心人士、龙芯路线的同情者维护，源代码托管在 GitHub 上，由社区爱好者随时更新。
 
-网站：[***咱龙了么***](https://areweloongyet.com/docs/intro)
+</section>
+
+<section>
 
 ## 龙架构双周会
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://loongfans.cn/biweekly" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
 
 龙架构双周会是由龙芯爱好者组织的社区会议，会议议程包括针对上游及各 Linux 发行版及其他系统项目的开发进展报告、社区事务报告，以及贡献者讨论及问答环节。
 
@@ -71,12 +121,22 @@ LoongArch64 生态分享与讨论区，包含有：
 
 会议进程于 Bilibili @龙芯爱好者社区 账号同步直播，亦时有安排线下活动。
 
-网站[***龙架构双周会***](https://loongfans.cn/biweekly)
+</section>
+
+<section>
 
 ## 龙架构的哔哩哔哩
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--link" href="https://space.bilibili.com/70360929" target="_blank" rel="noopener noreferrer">
+  	<span class="dlmi-chip__text">点击跳转</span>
+  </a>
+</div>
 
 龙芯爱好者社区是由第三方爱好者、行业人员与学生组成的，致力于龙芯（龙架构）软硬件生态建设的互联网社区。
 
 在这里，可以看到很多有趣好玩的东西！
 
-链接[***龙架构的哔哩哔哩***](https://space.bilibili.com/70360929)
+</section>
+
+</div>

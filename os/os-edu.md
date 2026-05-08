@@ -17,7 +17,7 @@ outline: deep
 | NJUos：计算机操作系统| NJUos | [仓库地址](https://github.com/bzy666-666/NJU-OS-loongarch) |
 | MOS：操作系统课程实验| MOS | [仓库地址](https://github.com/chhss17/buaa_mos_la64) |
 
-## 课程一、操作系统设计与实现：基于MaQue教学操作系统
+## 操作系统设计与实现：基于MaQue教学操作系统
 
 1. 课程简介
 
@@ -41,7 +41,7 @@ outline: deep
    仓库地址[在这里](https://github.com/LoongsonLab/maqueos/)
 
 
-## 课程二、操作系统原型-xv6实验与分析
+## 操作系统原型-xv6实验与分析
 
 1. 课程简介
 
@@ -64,7 +64,7 @@ outline: deep
    仓库地址[在这里](https://github.com/LoongsonLab/xv6-loongarch-exp)
 
 
-## 课程三、操作系统实验ucore
+## 操作系统实验ucore
 
 1. 课程简介
 
@@ -87,7 +87,7 @@ outline: deep
    仓库地址[在这里](https://github.com/LoongsonLab/ucore-loongarch64)
 
 
-## 课程四、操作系统内核构建实践实例NPUcore
+## 操作系统内核构建实践实例NPUcore
 
 1. 课程简介
 
@@ -106,7 +106,7 @@ outline: deep
 
    仓库地址[在这里](https://github.com/LoongsonLab/npucore-loongarch64)
 
-## 课程五、操作系统实验：基于rcore-loongarch教学操作系统
+## 操作系统实验：基于rcore-loongarch教学操作系统
 
 1. 课程简介
 
@@ -122,7 +122,7 @@ outline: deep
 
    仓库地址[在这里](https://github.com/Godones/rCoreloongArch)
 
-## 课程六、NPUcore-rust：操作系统内核构建实践实例
+## NPUcore-rust：操作系统内核构建实践实例
 
 1. 课程简介
 
@@ -136,7 +136,7 @@ outline: deep
 
    处于调试阶段。
 
-## 课程七、MOS：操作系统课程实验
+## MOS：操作系统课程实验
 
 1. 课程简介
 
@@ -153,7 +153,7 @@ outline: deep
    仓库地址[在这里](https://github.com/chhss17/buaa_mos_la64)
 
 
-## 课程八、NJUos：计算机操作系统
+## NJUos：计算机操作系统
 
 1. 课程简介
 

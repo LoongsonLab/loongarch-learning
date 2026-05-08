@@ -1,14 +1,13 @@
 ---
-title: LoongArch指令C语言实现
+title: LoongArch模拟器简介
 outline: deep
 ---
 
-# LoongArch64模拟器
+# LoongArch模拟器
 
 ## **LA_EMU模拟器**
 
   LoongArch64模拟器，支持整型，浮点，向量指令集。能够启动Linux。
-
 
 支持的指令集如下所示：
 
@@ -32,62 +31,29 @@ outline: deep
 
 指令的实现基本都在这里：[interpreter.c](https://github.com/LoongsonLab/LA_EMU/blob/master/loongarch64/interpreter.c)
 
+[仓库地址](https://github.com/LoongsonLab/LA_EMU)
 
-仓库的地址在[这里](https://github.com/LoongsonLab/LA_EMU)
+安装、使用与调试方法请查看文档[龙架构开发平台]中[模拟器]部分，或查看[LoongArch架构与OS交互]文档。
 
+## LoongArch-QEMU
 
-# LoongArch特区态指令的一些说明
+LoongArch-QEMU 是 QEMU 开源模拟器对龙芯自主指令集架构 LoongArch 的完整支持实现，为开发者提供了一个无需物理龙芯硬件即可体验和开发 LoongArch 生态的强大工具。
 
-主要是针对龙架构特权态的进一步说明，用C语言的模拟方式，解释特权态指令，更加的贴切。
+LoongArch-QEMU 支持User mode和System mode，支持启动 LoongArch 版 Linux 发行版（如 ArchLinux、UOS、Loongnix 等），模拟包括CPU、内存、存储、网络在内的全套硬件环境。
 
-下面是一些内容列表：
+[仓库地址](https://github.com/qemu/qemu.git)
 
-- 状态寄存器。介绍了 LoongArch 架构下包含的所有状态寄存器
+安装、使用与调试方法请查看文档[龙架构开发平台]中[模拟器]部分，或查看[LoongArch架构与OS交互]文档。
 
-- 状态寄存器指令。介绍了 LoongArch 架构下针对状态寄存器的特权态指令
-
-- 配置寄存器指令。介绍了 LoongArch 架构下读取 CPU 配置寄存器的特权态指令
-
-- 缓存指令。介绍了 LoongArch 架构下针对 Cache 操作的特权态指令
-
-- TLB 指令。介绍了 LoongArch 架构下针对 TLB 操作的特权态指令
-
-- 页表指令。介绍了 LoongArch 架构下用于页表维护的特权态指令
-
-- 例外与异常指令。介绍了 LoongArch 架构下处理例外和异常状态的特权态指令
-
-
-1. CSR寄存器             
-2. CSR指令             
-	2.1. CSRRD指令             
-	2.2. CSRWR指令             
-	2.3. CSRXCHG指令             
-3. IOCSR指令             
-	3.1. IOCSRRD指令             
-	3.2. IOCSRWR指令             
-4. CPUCFG 指令             
-5. CACOP 指令             
-6. TLB 与页表指令             
-	6.1. TLB 相关指令             
-	6.2. 页表查找指令             
-	6.3. 应用示例             
-7. ERTN指令             
-8. IDLE指令             
-9. SysCALL指令   
-
-文档的说明在[这里](https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/privilege_isa/index.html)。
-
-
-# LoongArch32R指令C语言模拟实现
+## LoongArch32R-NEMU
 
 基于NEMU实现的LoongArch32-Reduced模拟器
 
 本项目基于南京大学的 NEMU 项目，向其中移植了龙芯架构32位精简版的支持，即 LoongArch32-Reduced(以下简称为 LA32R)。
 
-为了向 LA32R 的开发者、学习者、爱好者以及“龙芯杯”大赛提供一个类似于一生一芯项目中的 difftest 环境，我产生了向 NEMU 中移植LA32R ，之后基于 difftest 框架实现 LA32R difftest 的想法。于是该项目诞生了。
+为了向 LA32R 的开发者、学习者、爱好者以及“龙芯杯”大赛提供一个类似于一生一芯项目中的 difftest 环境，基于 NEMU 项目，移植了LA32R指令集。
 
-NEMU 模拟器是一个轻量级的指令集模拟器，运行效果相当于一个单周期CPU。
-
+该模拟器是一个轻量级的指令集模拟器，运行效果相当于一个单周期CPU。
 
 ## 实现情况
 
@@ -106,6 +72,16 @@ NEMU 模拟器是一个轻量级的指令集模拟器，运行效果相当于一
 - 各种外设（包括串口）：尚未实现。本项目的最终目的是为了实现 difftest ，故外设支持的优先级靠后
 - 配套的 AM （裸机运行时环境）：尚未实现。理由同上
 
+[仓库地址](https://gitee.com/loongsonlab/la32r-nemu)
 
-仓库地址在[这里](https://gitee.com/loongsonlab/la32r-nemu)
+安装、使用与调试方法请查看文档[龙架构开发平台]中[模拟器]部分。
 
+## LA32R-QEMU
+
+基于开源LoongArch-QEMU构建的支持LoongArch32精简指令集的QEMU。
+
+通过qemu（Quick Emulator），可以在宿主机上模拟运行编写的LA32R汇编程序。另外，QEMU的两种运行模式：User mode 和 System mode，LA32R-QEMU均可运行。
+
+[仓库地址](https://gitee.com/loongson-edu/la32r-QEMU)
+
+安装、使用与调试方法请查看文档[龙架构开发平台]中[模拟器]部分。
