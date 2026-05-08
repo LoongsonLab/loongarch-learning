@@ -76,11 +76,13 @@ outline: deep
 	- Go
 	- .NET等
 
-- [LoongArch64模拟器](/docs-la/others-la64-insn)
+- [LoongArch模拟器](/docs-la/others-la64-insn)
 	主要是LoongArch架构下模拟器介绍与说明：
 	- LA_EMU
-	- LA32r_QEMU
 	- LoongArch_QEMU
+	- LA32R_QEMU
+	- LA32R_NEMU
+	
 
 - [LIBC库](/toolchain/libc)：
   常用的C库：
@@ -95,15 +97,15 @@ outline: deep
 
 ## **龙架构开发平台**
 
-涉及常用的开发版相关资料
-
-	- [模拟器](/platform/qemu)
+包含常用的开发平台相关资料
 
   - [2k1000LA星云板](/platform/2k1000la)
 
   - [2k0300蜂鸟](/platform/2k0300)
 
   - [2k3000开发板](/platform/2k3000)
+
+  - [LoongArch模拟器](/platform/qemu)
 
 
 ## **龙架构操作系统**
