@@ -5,9 +5,19 @@ outline: deep
 
 # 龙架构资源网站
 
+---
+
+<div class="developer">
+
 此处收集一些面向龙架构的软硬件资源网站，汇总如下：
 
+<section class="dlmi-card">
+
 ## 龙芯开源社区
+
+<div class="dlmi-actions">
+  <a class="dlmi-chip dlmi-chip--pdf" href="https://www.loongnix.cn/zh/" target="_blank" rel="noopener noreferrer"><span class="dlmi-chip__kind">链接</span><span class="dlmi-chip__text">点击跳转</span></a>
+</div>
 
 龙芯开源社区是龙芯处理器的基础软件生态建设平台，包含有：
 - Loongnix系统安装镜像、虚拟机镜像等下载。
@@ -18,7 +28,7 @@ outline: deep
 - Electron 框架支持。
 - 以及其他基础软件、图形视频驱动、调试工具、应用工具等。
 
-社区网址链接：https://www.loongnix.cn/zh/
+</section>
 
 ## 龙芯应用合作社
 
@@ -53,3 +63,21 @@ outline: deep
 龙架构漂流板(1024计划)活动由龙芯爱好者社区(support@loongfans.com)运营, 计划初期项目缺少自动化流程包含大量人工操作, 如有纰漏欢迎指正。
 
 网站[***龙架构漂流板***](https://github.com/loongson-community/1024)
+
+
+## LoongArch版千问客户端v2.3.2
+
+Linux版千问客户端，支持登录，支持上传/下载文件
+注：需要登录才能使用完整功能
+
+网站[***千问***](https://github.com/kota-rina3/hokeshi/releases/download/qwen-linux-2.3.2/com.qianwen.otohime_2.3.2-fix1_loong64.deb)
+
+
+## libLoL
+
+libLoL (LoongArch on LoongArch) 是一款用于提供旧世界 ABI 兼容性的运行时。
+旧世界 ABI 常用于为龙芯提供的 Loongnix 参考发行版和统信 UOS 设计的商业软件，如腾讯 QQ Linux 版、金山 WPS for Linux 和龙芯浏览器等。由于这些应用程序尚未移植到新世界 ABI 上，本运行时旨在为新世界发行版用户提供运行上述应用程序的便利。
+
+网站[***libLoL***](https://liblol.aosc.io/)
+
+</div>
