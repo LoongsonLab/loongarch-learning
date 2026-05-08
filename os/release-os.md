@@ -9,36 +9,36 @@ outline: deep
 
 | 编号 | 名称 | 特性 | 链接 |
 |------|------|------|------|
-| 1 | Alpine Linux | 基于 musl libc 和 BusyBox 的，注重安全性的轻量级 Linux 发行版 | [https://www.alpinelinux.org](https://www.alpinelinux.org) |
-| 2 | ALT Linux | 基于 RPM 软件包及 APT-RPM 软件包管理前端的商业 Linux 发行版 | [https://en.altlinux.org/Main_Page](https://en.altlinux.org/Main_Page) |
-| 3 | 安同 OS | 以“简明可靠”为设计及维护目标的，面向有一定 Linux 使用经验用户的发行版 | [https://aosc.io/aosc-os](https://aosc.io/aosc-os) |
-| 4 | Arch Linux for Loong64 | 试图保持易用性的，可定制的轻量级 Linux 发行版 | [https://loongarchlinux.lcpu.dev](https://loongarchlinux.lcpu.dev) |
-| 5 | Buildroot | 用于通过交叉编译构建嵌入式 Linux 系统的工具 | [https://buildroot.org/](https://buildroot.org/) |
-| 6 | CLFS for LoongArch | 介绍如何从源代码完全交叉编译一个 Linux 发行版 | [https://github.com/sunhaiyong1978/CLFS-for-LoongArch](https://github.com/sunhaiyong1978/CLFS-for-LoongArch) |
-| 7 | Debian | 全功能的，可自由使用和分发的 Linux 发行版 | [https://www.debian.org](https://www.debian.org) |
-| 8 | deepin 深度操作系统 | 新手友好的桌面 Linux 发行版 | [https://www.deepin.org](https://www.deepin.org) |
-| 9 | eweOS | 基于 musl libc 及其他技术的前沿 Linux 发行版 | [https://os.ewe.moe/](https://os.ewe.moe/) |
-| 10 | Fedora Remix LoongArch | 面向开发者和内容创作者的桌面发行版 | [https://github.com/fedora-remix-loongarch/releases-info](https://github.com/fedora-remix-loongarch/releases-info) |
-| 11 | Gentoo | 高度可定制的，基于源代码的 Linux 发行版 | [https://www.gentoo.org](https://www.gentoo.org) |
-| 12 | GXDE OS | 围绕 DDE 15 继续维护的 Linux 发行版 | [https://www.gxde.top/](https://www.gxde.top/) |
-| 13 | 银河麒麟操作系统 | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [https://www.kylinos.cn](https://www.kylinos.cn) |
-| 14 | LFS 龙架构版 | 详细介绍如何完全从源代码构建自定义的 Linux 系统 | [https://www.linuxfromscratch.org/~xry111/lfs/#loongarch](https://www.linuxfromscratch.org/~xry111/lfs/#loongarch) |
-| 15 | loongFire | 防火墙操作系统 IPFire 的龙架构移植 | [https://www.bpfire.net/](https://www.bpfire.net/) |
-| 16 | Loongnix | 龙芯中科维护的参考 Linux 发行版 | [https://www.loongnix.cn/zh/loongnix/](https://www.loongnix.cn/zh/loongnix/) |
-| 17 | 新支点操作系统 | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [https://www.gd-linux.com/](https://www.gd-linux.com/) |
-| 18 | 中科方德操作系统 | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [https://www.nfschina.com](https://www.nfschina.com) |
-| 19 | Nix4Loong | 采用声明式包管理的 Linux 发行版 | [https://nix4loong.cn/](https://nix4loong.cn/) |
-| 20 | 龙蜥操作系统 | 兼容 CentOS 传统操作习惯的 Linux 发行版 | [https://openanolis.cn/anolisos](https://openanolis.cn/anolisos) |
-| 21 | OpenCloudOS | 鸥栖社区维护的服务器操作系统 | [https://opencloudos.org](https://opencloudos.org) |
-| 22 | openEuler | 面向服务器、云计算、边缘计算、嵌入式等数字基础设施的开源操作系统 | [https://openeuler.org](https://openeuler.org) |
-| 23 | 开放麒麟 | 新手友好的桌面 Linux 发行版 | [https://www.openkylin.top/](https://www.openkylin.top/) |
-| 24 | OpenWRT | 面向嵌入式设备和路由器的 Linux 发行版 | [https://openwrt.org](https://openwrt.org) |
-| 25 | Proxmox VE | 面向企业虚拟化平台的全功能开源服务器管理平台，其龙架构移植由梨儿方科技完成并持续维护 | [https://www.lierfang.com//#/open/third](https://www.lierfang.com//#/open/third) |
-| 26 | 红旗 Linux | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [https://www.chinaredflag.cn/](https://www.chinaredflag.cn/) |
-| 27 | Slackwareloong | 高度可定制的，追求纯粹 UNIX 体验的 Linux 发行版 | [https://www.slackware.com](https://www.slackware.com) |
-| 28 | T2 SDE | 基于源代码的发行版开发套件，提供为特定场景定制 Linux 发行版的工具和脚本 | [https://t2linux.com](https://t2linux.com) |
-| 29 | UOS | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [https://chinauos.com](https://chinauos.com) |
-| 30 | 勇豹OS | “勇豹”(Yongbao)是一个使用交叉编译的方式构建目标指令集架构操作系统发行版的项目。 | [https://github.com/sunhaiyong1978/Yongbao](https://github.com/sunhaiyong1978/Yongbao) |
+| 1 | Alpine Linux | 基于 musl libc 和 BusyBox 的，注重安全性的轻量级 Linux 发行版 | [点击查看](https://www.alpinelinux.org) |
+| 2 | ALT Linux | 基于 RPM 软件包及 APT-RPM 软件包管理前端的商业 Linux 发行版 | [点击查看](https://en.altlinux.org/Main_Page) |
+| 3 | 安同 OS | 以“简明可靠”为设计及维护目标的，面向有一定 Linux 使用经验用户的发行版 | [点击查看](https://aosc.io/aosc-os) |
+| 4 | Arch Linux for Loong64 | 试图保持易用性的，可定制的轻量级 Linux 发行版 | [点击查看](https://loongarchlinux.lcpu.dev) |
+| 5 | Buildroot | 用于通过交叉编译构建嵌入式 Linux 系统的工具 | [点击查看](https://buildroot.org/) |
+| 6 | CLFS for LoongArch | 介绍如何从源代码完全交叉编译一个 Linux 发行版 | [点击查看](https://github.com/sunhaiyong1978/CLFS-for-LoongArch) |
+| 7 | Debian | 全功能的，可自由使用和分发的 Linux 发行版 | [点击查看](https://www.debian.org) |
+| 8 | deepin 深度操作系统 | 新手友好的桌面 Linux 发行版 | [点击查看](https://www.deepin.org) |
+| 9 | eweOS | 基于 musl libc 及其他技术的前沿 Linux 发行版 | [点击查看](https://os.ewe.moe/) |
+| 10 | Fedora Remix LoongArch | 面向开发者和内容创作者的桌面发行版 | [点击查看](https://github.com/fedora-remix-loongarch/releases-info) |
+| 11 | Gentoo | 高度可定制的，基于源代码的 Linux 发行版 | [点击查看](https://www.gentoo.org) |
+| 12 | GXDE OS | 围绕 DDE 15 继续维护的 Linux 发行版 | [点击查看](https://www.gxde.top/) |
+| 13 | 银河麒麟操作系统 | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [点击查看](https://www.kylinos.cn) |
+| 14 | LFS 龙架构版 | 详细介绍如何完全从源代码构建自定义的 Linux 系统 | [点击查看](https://www.linuxfromscratch.org/~xry111/lfs/#loongarch) |
+| 15 | loongFire | 防火墙操作系统 IPFire 的龙架构移植 | [点击查看](https://www.bpfire.net/) |
+| 16 | Loongnix | 龙芯中科维护的参考 Linux 发行版 | [点击查看](https://www.loongnix.cn/zh/loongnix/) |
+| 17 | 新支点操作系统 | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [点击查看](https://www.gd-linux.com/) |
+| 18 | 中科方德操作系统 | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [点击查看](https://www.nfschina.com) |
+| 19 | Nix4Loong | 采用声明式包管理的 Linux 发行版 | [点击查看](https://nix4loong.cn/) |
+| 20 | 龙蜥操作系统 | 兼容 CentOS 传统操作习惯的 Linux 发行版 | [点击查看](https://openanolis.cn/anolisos) |
+| 21 | OpenCloudOS | 鸥栖社区维护的服务器操作系统 | [点击查看](https://opencloudos.org) |
+| 22 | openEuler | 面向服务器、云计算、边缘计算、嵌入式等数字基础设施的开源操作系统 | [点击查看](https://openeuler.org) |
+| 23 | 开放麒麟 | 新手友好的桌面 Linux 发行版 | [点击查看](https://www.openkylin.top/) |
+| 24 | OpenWRT | 面向嵌入式设备和路由器的 Linux 发行版 | [点击查看](https://openwrt.org) |
+| 25 | Proxmox VE | 面向企业虚拟化平台的全功能开源服务器管理平台，其龙架构移植由梨儿方科技完成并持续维护 | [点击查看](https://www.lierfang.com//#/open/third) |
+| 26 | 红旗 Linux | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [点击查看](https://www.chinaredflag.cn/) |
+| 27 | Slackwareloong | 高度可定制的，追求纯粹 UNIX 体验的 Linux 发行版 | [点击查看](https://www.slackware.com) |
+| 28 | T2 SDE | 基于源代码的发行版开发套件，提供为特定场景定制 Linux 发行版的工具和脚本 | [点击查看](https://t2linux.com) |
+| 29 | UOS | 面向行业信息化应用的商用桌面和服务器 Linux 发行版 | [点击查看](https://chinauos.com) |
+| 30 | 勇豹OS | “勇豹”(Yongbao)是一个使用交叉编译的方式构建目标指令集架构操作系统发行版的项目。 | [点击查看](https://github.com/sunhaiyong1978/Yongbao) |
 
 
 详细信息如下，**排序按照首字母大小排列**：
