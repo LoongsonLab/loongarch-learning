@@ -104,6 +104,7 @@ export default defineConfig({
         text: '龙架构操作系统',
         collapsed: false,
         items: [
+          { text: 'LoongArch教学OS', link : '/os/os-edu'},
           { text: 'LoongArch开源Kernel', link: '/os/os-kernel' },
           { text: '支持龙架构的linux发行版', link: '/os/release-os' },
         ],

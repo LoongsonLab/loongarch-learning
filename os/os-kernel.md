@@ -5,193 +5,17 @@ outline: deep
 
 # LoongArch开源kernel
 
-此处汇总的LoongArch开源kernel，总体分为：
-
-- 教学操作系统。
-- 开源操作系统。
-
-基于LoongArch架构的操作系统课程，其开源代码汇总如下：
-
-|  课程   | 名称  | 链接 |
-|  :---:  | :---:  | :---: |
-|  操作系统设计与实现：基于MaQue教学操作系统 | MaQue | [仓库地址](https://github.com/LoongsonLab/maqueos/) |
-| 操作系统原型-xv6实验与分析  | xv6 | [仓库地址](https://github.com/LoongsonLab/xv6-loongarch-exp) |
-| 操作系统实验：基于ucore-loongarch教学操作系统| ucore | [仓库地址](https://github.com/LoongsonLab/ucore-loongarch64) |
-| 操作系统实验：基于rcore-loongarch教学操作系统| rcore| [仓库地址](https://github.com/Godones/rCoreloongArch) |
-| 操作系统内核构建实践实例NPUcore| NPUcore| [仓库地址](https://github.com/LoongsonLab/npucore-loongarch64) |
-| NJUos：计算机操作系统| NJUos | [仓库地址](https://github.com/bzy666-666/NJU-OS-loongarch) |
-| MOS：操作系统课程实验| MOS | [仓库地址](https://github.com/chhss17/buaa_mos_la64) |
-
 支持LoongArch架构的开源操作系统，汇总如下：
 
 |  名称  | 链接 |
 |  :---:  | :---: |
 | Arceos| [仓库地址](https://github.com/Starry-OS/arceos.git)|
 | StarryOS| [仓库地址](https://github.com/Starry-OS/StarryOS.git)|
-| NoAxiom-OS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510336995214-3416.git)|
-| Chronix| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995568-2656.git)|
-| Nighthawk OS | [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995755-1211.git)|
-| RocketOS| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510213995926-3349.git)|
-| Del0n1x| [仓库地址](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995600-3446.git)|
 | asterinas| [仓库地址](https://github.com/asterinas/asterinas)|
 | DragonOS| [仓库地址](https://github.com/DragonOS-Community/DragonOS.git)|
 | RT-Thread| [仓库地址](https://github.com/LoongsonLab/rt-thread.git)|
 | NXOS| [仓库地址](https://gitee.com/BookOS/nxos.git)|
 | ByteOS| [仓库地址](https://github.com/Byte-OS/ByteOS.git)|
-
-## LoongArch架构操作系统(OS)类课程
-
-### 课程一、操作系统设计与实现：基于MaQue教学操作系统
-
-1. 课程简介
-
-   `MaQueOS`是一个开源的基于***LoongArch***架构的教学版操作系统。作为一个教学版操作系统，MaQueOS的代码虽然只有1000多行，但是它实现了操作系统最核心的功能子系统：进程管理、内存管理、文件系统、中断管理和外设驱动，并为应用程序提供了16个系统调用接口。
-   
-   
-   详细介绍可查看`maqueos/README.md`。
-
-   点击查看[在线课程](https://www.bilibili.com/video/BV1EH4y1c7WX/?share_source=copy_web)。
-
-   `doc/maqueos`目录下包含相应教材与实验指导书。
-
-2. 使用说明
-
-   运行教程可查看`maqueos/README.md#二、编译运行调试`，或参考实验指导书。
-
-3. 更新说明
-
-   **该版本目前支持qemu-9.2及以上版本运行**。
-
-   仓库地址[在这里](https://github.com/LoongsonLab/maqueos/)
-
-
-### 课程二、操作系统原型-xv6实验与分析
-
-1. 课程简介
-
-   `xv6`是麻省理工的一个教学操作系统，是 Dennis Ritchie 和 Ken Thompson 的 Unix 的重新实现版本 6 (v6)。 被广泛应用于操作系统教学课程。
-
-   本项目本项目将`xv6`移植到***LoongArch***架构上。
-
-   详细介绍可查看`xv6-loongarch-exp/README.md`。
-
-   `doc/xv6-loongarch-exp`目录下包含相应实验指导书。
-
-2. 使用说明
-
-   运行可查看`xv6-loongarch-exp/README.md#更新`，或查看实验指导书。
-
-3. 更新说明
-
-   **该版本目前支持qemu-9.2及以上版本运行**。
-
-   仓库地址[在这里](https://github.com/LoongsonLab/xv6-loongarch-exp)
-
-
-### 课程三、操作系统实验ucore
-
-1. 课程简介
-
-   本课程为重庆大学操作系统实验，其基于`ucore-thumips`，移植到***Loongarch***上。
-
-   详细介绍可查看`ucore-loongarch64/README.md`。
-
-   点击查看[在线课程](https://space.bilibili.com/12553542/lists)。
-
-   本课程提供在线指导手册，请[点击查看](https://cyyself.github.io/ucore_la32_docs/).
-
-2. 使用说明
-
-   运行教程可查看`ucore-loongarch64/README.md#使用教程`。
-
-3. 更新说明
-
-   **该版本目前支持qemu-9.2及以上版本运行**。
-
-   仓库地址[在这里](https://github.com/LoongsonLab/ucore-loongarch64)
-
-
-### 课程四、操作系统内核构建实践实例NPUcore
-
-1. 课程简介
-
-   `NPUcore`是**西北工业大学**的操作系统内核构建实践型教学操作系统。目前`NPUcore`具有内存管理、进程管理、文件系统、网络核心功能，支持龙芯国产自主***LoongArch***架构。
-
-   详细介绍可查看`npucore-loongarch64/README.md`。
-
-
-2. 使用说明
-
-   运行教程可查看`npucore-loongarch64/README.md#环境配置`。
-
-3. 更新说明
-
-   **该版本目前支持qemu-9.2及以上版本运行**。
-
-   仓库地址[在这里](https://github.com/LoongsonLab/npucore-loongarch64)
-
-### 课程五、操作系统实验：基于rcore-loongarch教学操作系统
-
-1. 课程简介
-
-   rCore为清华大学操作系统课程使用的教学系统，是基于ucore系统，使用rust语言重新实现的版本。
-
-2. 使用说明
-
-   运行教程可查看`rcore-loongarch64/README.md`。
-
-3. 更新说明
-
-   **该版本目前支持qemu-9.2及以上版本运行**。
-
-   仓库地址[在这里](https://github.com/Godones/rCoreloongArch)
-
-### 课程六、NPUcore-rust：操作系统内核构建实践实例
-
-1. 课程简介
-
-   `NPUcore`是西北工业大学的操作系统内核构建实践型教学操作系统。目前`NPUcore`具有内存管理、进程管理、文件系统、网络核心功能，支持龙芯国产自主***LoongArch***架构。该版本为使用rust语言重新实现版本。
-
-2. 使用说明
-
-   暂无。
-
-3. 更新说明
-
-   处于调试阶段。
-
-### 课程七、MOS：操作系统课程实验
-
-1. 课程简介
-
-   `MOS`为北京航空航天大学计算机学院《操作系统》课程实验成果，为基于***Loongarch***架构的简易操作系统实现，包含内存管理、进程调度、文件系统、进程间通信等核心功能。
-
-2. 使用说明
-
-   暂无。
-
-3. 更新说明
-
-   处于调试阶段。
-
-   仓库地址[在这里](https://github.com/chhss17/buaa_mos_la64)
-
-
-### 课程八、NJUos：计算机操作系统
-
-1. 课程简介
-
-   `NJUos`为南京大学操作系统实验。实验要求深入理解操作系统概念、原理及实践操作。实验中探索操作系统的核心功能，包括进程管理、内存管理、文件系统和I/O设备控制等。具体实验内容涵盖了进程创建、撤销、调度、同步与通信、内存分配与回收、文件系统设计、I/O设备的驱动编写和中断处理等。
-
-2. 使用说明
-
-   暂无。
-
-3. 更新说明
-
-   处于调试阶段
-
-   仓库地址[在这里](https://github.com/bzy666-666/NJU-OS-loongarch)
 
 
 ## LoongArch支持的OS kernel
@@ -206,39 +30,6 @@ outline: deep
 使用Rust开发的kernel，兼容Linux系统调用（部分还在完善中），复用了ArceOS代码。
 
 仓库[在此](https://github.com/Starry-OS/StarryOS.git)
-
-
-### 3. 杭州电子科技大学NoAxiom-OS
-NoAxiom 操作系统是由杭州电子科技大学NoAxiom团队开发的一款基于 Rust 的宏内核操作系统，能够在 RISC-V64 和 ***LoongArch64*** 两种架构上运行。系统采用 Rust 的无栈协程与异步语法实现了异步调度，在 I/O 方面具备优秀性能。
-
-仓库[在此](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510336995214-3416.git)
-
-
-### 4. 哈尔滨工业大学(深圳)Chronix
-Chronix 是一个使用 Rust 实现、支持 RISCV-64 和 ***Loongarch-64*** 硬件平台的多核宏内核操作系统。
-“Chron” 源自希腊语 “χρόνος”（chronos），意为 “时间”。代表了我们的 OS 具有优异的实时性、强悍的性能。
-后缀“-ix”致敬类 Unix 系统，代表了我们的 OS 具有兼容性以及开源属性。
-
-仓库[在此](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995568-2656.git)
-
-
-### 5.哈尔滨工业大学(深圳)Nighthawk OS 
-Nighthawk OS 是使用 Rust 编写，支持 RISC-V 和 ***LoongArch*** 指令集架构，采用异步无栈协程架构的操作系统。
-
-仓库[在此](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995755-1211.git)
-
-
-### 6.哈尔滨工业大学RocketOS 
-RocketOS 是一款采用 Rust 语言开发的现代化宏内核操作系统，支持 RISC-V 和 ***LoongArch*** 架构。该系统从最小内核开始开发，采用同步栈式设计架构，集成了完整的中断处理机制、进程管理系统、内存管理模块、文件系统以及网络协议栈等核心组件，通过系统调用接口为用户程序提供高效可靠的服务支持
-
-仓库[在此](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202510213995926-3349.git)
-
-
-### 7.哈尔滨工业大学(深圳)Del0n1x
-Del0n1x 是一个使用 Rust 语言编写的同时适配 RISC-V64 和 ***LoongArch64*** 的跨平台操作系统，目标是实现一个 Linux 兼容的多核操作系统，支持进程调度、文件系统、网络等功能。
-
-仓库[在此](https://gitlab.eduxiji.net/educg-group-32146-2710490/T202518123995600-3446.git)
-
 
 ### 8. asterinas(星绽)
 
