@@ -59,6 +59,7 @@ export default {
 
           selectors.forEach((sel) => {
             document.querySelectorAll(sel).forEach((d) => {
+              if (d.closest('.docs-la-ref-manuals')) return
               d.open = true
             })
           })

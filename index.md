@@ -59,7 +59,7 @@ outline: deep
 
   主要涉及LA32R指令说明，以及汇编编程简介
 
--	[LoongArch架构与OS交互](/competitions/os-design/os-interaction.md)
+-	[LoongArch架构与OS交互](/docs-la/os-interaction)
 
 	主要介绍LoongArch架构底层与操作系统内核交互原理与实现细节
 

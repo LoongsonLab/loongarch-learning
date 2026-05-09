@@ -55,7 +55,6 @@ export default defineConfig({
               { text: '历年培训报告', link: '/competitions/os-design/training-reports/' },
               { text: '历年龙芯赛题', link: '/competitions/os-design/past-loongson-topics/' },
               { text: '常见问题FAQ', link: '/competitions/os-design/faq/' },
-              { text: 'LoongArch架构与OS交互', link: '/competitions/os-design/os-interaction.md' },
             ],
           },
           {
@@ -75,7 +74,7 @@ export default defineConfig({
         items: [
           { text: '官方参考手册', link: '/docs-la/' },
           { text: 'LA32R指令集学习指导手册', link: '/docs-la/others-ref' },
-          { text: 'LoongArch架构与OS交互', link: '/competitions/os-design/os-interaction.md' },
+          { text: 'LoongArch架构与OS交互', link: '/docs-la/os-interaction' },
         ],
       },
       
