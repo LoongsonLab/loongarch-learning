@@ -1,0 +1,100 @@
+/*
+ * 有侧栏：站名单行、无省略号。
+ * 做法：左侧标题带宽度与 .content 的 padding-left 用同一变量对齐，
+ * 宽度取「不小于侧栏 / 不小于排版所需」与「为右侧搜索等预留约 280px」之间的平衡。
+ */
+
+@media (min-width: 960px) {
+  .Layout:not(.sidebar-collapsed) .VPNavBar.has-sidebar {
+    --loongson-nav-title-band: max(
+      var(--vp-sidebar-width),
+      min(520px, calc(100vw - 280px))
+    );
+  }
+
+  .Layout:not(.sidebar-collapsed) .VPNavBar.has-sidebar .container > .title {
+    width: var(--loongson-nav-title-band) !important;
+    max-width: none !important;
+    overflow-x: visible;
+    overflow-y: hidden;
+    box-sizing: border-box;
+  }
+
+  .Layout:not(.sidebar-collapsed) .VPNavBar.has-sidebar .content {
+    padding-left: var(--loongson-nav-title-band) !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar {
+    --loongson-nav-collapsed-band: min(680px, calc(100vw - 280px));
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .container > .title {
+    width: var(--loongson-nav-collapsed-band) !important;
+    max-width: none !important;
+    overflow-x: visible !important;
+    overflow-y: hidden !important;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .VPNavBarTitle a.title {
+    overflow-x: visible !important;
+    max-width: none !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .content {
+    padding-left: var(--loongson-nav-collapsed-band) !important;
+  }
+
+  .VPNavBar.has-sidebar .VPNavBarTitle {
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: visible;
+  }
+
+  .VPNavBar.has-sidebar .VPNavBarTitle .title {
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+    max-width: 100%;
+    height: var(--vp-nav-height) !important;
+    box-sizing: border-box;
+    align-items: center !important;
+    overflow-x: visible;
+    overflow-y: hidden;
+  }
+
+  .VPNavBar.has-sidebar .VPNavBarTitle .title > span {
+    display: block;
+    overflow: visible;
+    white-space: nowrap;
+    line-height: var(--vp-nav-height);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  /*
+   * 主题默认：有侧栏时站点链接带 1px 底边线与侧栏菜单分界；
+   * 该线横贯整列，与滚动条叠在一起显得像「断线」，故去掉。
+   */
+  .VPNavBar.has-sidebar .VPNavBarTitle.has-sidebar .title,
+  .VPNavBar.has-sidebar .VPNavBarTitle .title {
+    border-bottom: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Layout:not(.sidebar-collapsed) .VPNavBar.has-sidebar {
+    --loongson-nav-title-band: max(
+      calc((100vw - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) - 32px),
+      min(520px, calc(100vw - 280px))
+    );
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar {
+    --loongson-nav-collapsed-band: max(
+      calc((100vw - var(--vp-layout-max-width)) / 2),
+      min(680px, calc(100vw - 280px))
+    );
+  }
+}

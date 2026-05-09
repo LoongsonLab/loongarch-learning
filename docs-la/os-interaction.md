@@ -8,7 +8,7 @@ outline: deep
 此文档结合代码例子**详细介绍龙架构底层如何与操作系统内核配合**。读完这个文档，可以**很快地**为操作系统内核增加 **LoongArch** 支持。
 
 <p class="os-interaction-read-wrap">
-  <a href="https://github.com/LoongsonLab/OS_kernel_with_loong64_doc" target="_blank" rel="noopener noreferrer" class="os-interaction-read-btn">点击阅读</a>
+  <a href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="os-interaction-read-btn">点击阅读</a>
 </p>
 
 

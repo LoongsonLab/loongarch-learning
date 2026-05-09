@@ -4,7 +4,9 @@ import NavLinkWithIcon from './components/NavLinkWithIcon.vue'
 import './sidebar-divider.css'
 import './sidebar-collapse.css'
 import './home-hero-bg.css'
+import './home-overview.css'
 import './layout-responsive.css'
+import './navbar-title-overflow.css'
 import './training-reports.css'
 import './kernel-page.css'
 import './past-loongson-topics.css'
@@ -31,10 +33,11 @@ export default {
           padding-top: 10px;
         }
         .VPNavBarTitle .title .logo {
-          margin-right: 4px;
+          margin-right: 8px;
           height: 28px;
           width: auto;
           object-fit: contain;
+          flex-shrink: 0;
         }
       `
       document.head.appendChild(style)
