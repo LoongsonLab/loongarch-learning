@@ -55,7 +55,7 @@ LoongArch-QEMU 支持User mode和System mode，支持启动 LoongArch 版 Linux 
 
 该模拟器是一个轻量级的指令集模拟器，运行效果相当于一个单周期CPU。
 
-## 实现情况
+**实现情况**
 
 本项目按照《龙芯架构32位精简版参考手册》实现，目前已经实现了：
 

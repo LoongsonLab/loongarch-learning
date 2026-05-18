@@ -11,14 +11,40 @@ outline: [2, 4]
 <details>
 <summary>第一场技术培训会</summary>
 
- 直播回放链接：[点击跳转](https://live.eyunbo.cn/live/256008?uin=1729)
 
 | 题目 | 讲者 | 报告文件 |
 | --- | --- | --- |
 | 2026年操作系统大赛国赛章程和技术方案解读 | 夏文 | [下载](https://pan.educg.net/s/Y5v3ir) |
 | 2026年操作系统大赛国赛功能赛题新变化介绍 | 张羽 | [下载](https://pan.educg.net/s/0kR3TK) |
 | 2026操作系统大赛国赛内核赛道测例、测评方案说明 | 王雷 | [下载](https://pan.educg.net/s/9WPohm) |
-| 操作系统设计赛技术平台参赛报名、提交等事项操作指引 | 无 |
+
+<summary>第三场技术培训会</summary>
+
+
+| 题目 | 讲者 | 报告文件 |
+| --- | --- | --- |
+| eFuse:基于eBPF加速的高性能用户态文件系统 | 许辰涛 | [下载](https://pan.educg.net/s/alX8U3) |
+| KFC(Kernel Fault Corrector)-agent:低成本高准确率的kdump修复持续学习智能体 | 覃煜淮 | [下载](https://pan.educg.net/s/0k0RIK) |
+| MIAYC (Memory Is All You Check):轻量高效的内存检测工具 | 李紫剑 | [下载](https://pan.educg.net/s/4pYvUr) |
+
+
+<summary>第五场技术培训会</summary>
+
+
+| 题目 | 讲者 | 报告文件 |
+| --- | --- | --- |
+| OS功能挑战赛道参赛经验分享 | 方嘉文 | [下载](https://pan.educg.net/s/rpdyhJ) |
+| F2FS Large Folios支持 | 赵南哲 | [下载](https://pan.educg.net/s/Od57f7) |
+
+<summary>第九场技术培训会（龙芯专场）</summary>
+
+
+| 题目 | 讲者 | 报告文件 |
+| --- | --- | --- |
+| LoongArch架构上系统内核适配的要点解析 | 李亚伟 | [下载](https://pan.educg.net/s/bWdof3) |
+| Axvisor：龙芯虚拟化的探索 | 谢祖钧 | [下载](https://pan.educg.net/s/74dzfd) |
+| LARS：LoongArch汇编指令的模拟与可视化 | 张书航 | [下载](https://pan.educg.net/s/Xovocm) |
+| GXDE：DDE 15现代化LoongArch移植的多架构开箱即用发行版 | 张义昊 | [下载](https://pan.educg.net/s/pBANhy) |
 
 </details>
 
