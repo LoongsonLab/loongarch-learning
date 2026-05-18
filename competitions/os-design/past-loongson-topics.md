@@ -11,9 +11,8 @@ outline: deep
 
 <div class="past-loongson-topics-page">
 
-<!-- 快速入口：先把所有仓库集中列出来，方便直接点 -->
+
 <div class="past-topic-repo">
-赛题仓库快速入口：
 
 - proj37 · 基于LoongArch的轻量级智能体运行沙箱
 - proj38 · 基于国产处理器的网络协议栈加速
