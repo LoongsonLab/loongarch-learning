@@ -70,7 +70,7 @@ QEMU-LoongArch 支持User mode和System mode，支持启动 LoongArch 版 Linux 
 
 [仓库地址](https://github.com/qemu/qemu.git)
 
-###   安装、使用与调试
+###   安装与使用
 
 1. 可使用以下命令，安装社区或发行版维护的预编译版本:
 ``` shell
@@ -185,3 +185,5 @@ cd build
     --disable-werror --enable-debug
 make
 ```
+
+运行教程与QEMU-LoongArch基本相同。
