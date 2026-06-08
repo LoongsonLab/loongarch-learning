@@ -164,6 +164,8 @@ make
 ```
 其中，coremark.bin可换成加载程序的.bin文件。
 
+也可通过加载Docker镜像的方式，直接使用。具体操作请查看QEMU_LA32R章节。
+
 ## QEMU-LA32R
 
 基于开源LoongArch-QEMU构建的支持LoongArch32精简指令集的QEMU。
@@ -174,7 +176,7 @@ make
 
 ### 安装与使用
 
-仓库发行版中已提供x86_64和aarch64两种架构的qemu，下载解压缩后，无需编译，可直接运行。
+1.  仓库发行版中已提供x86_64和aarch64两种架构的qemu，下载解压缩后，无需编译，可直接运行。
 
 也可以下载源码，使用以下命令，自主编译运行。
 ``` bash
@@ -187,3 +189,90 @@ make
 ```
 
 运行教程与QEMU-LoongArch基本相同。
+
+2.  通过Docker镜像，加载运行环境。
+
+可通过Dockerfile文件，创建运行环境。
+
+在相应目录创建名为Dockerfile的文件，编辑以下内容。
+``` shell
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+WORKDIR /home/
+RUN   sed -i 's|http://archive.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list
+RUN   sed -i 's|http://security.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list
+RUN apt-get update && apt-get install -y \
+  build-essential   \
+  make      \
+  vim       \
+  g++     \
+  wget      \
+  git     \
+  libsnappy-dev   \
+  libpixman-1-dev   \
+  libepoxy-dev    \
+  liblzo2-dev   \
+  libcapstone-dev   \
+  libspice-server-dev \
+  libsdl2-2.0-0   \
+  libsdl2-image-dev \
+  libpmem-dev   \
+  libfdt-dev    \
+  libnuma-dev   \
+  librdmacm-dev   \
+  libslirp-dev    \
+  libvdeplug-dev    \
+  libdaxctl-dev   \
+  libaio-dev    \
+  libgtk-3-dev    \
+  libvte-2.91-dev   \
+  libbrlapi-dev   \
+  libiscsi-dev    \
+  libcurl4-gnutls-dev \
+  libnfs-dev    \
+  librbd-dev    \
+  flex bison    \
+  libreadline-dev   \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN wget https://gitee.com/loongson-edu/la32r-toolchains/releases/download/v0.0.3/loongson-gnu-toolchain-8.3-x86_64-loongarch32r-linux-gnusf-v2.0.tar.xz  \
+  && tar xvf ./loongson-gnu-toolchain-8.3-x86_64-loongarch32r-linux-gnusf-v2.0.tar.xz \
+  && rm ./loongson-gnu-toolchain-8.3-x86_64-loongarch32r-linux-gnusf-v2.0.tar.xz  
+
+RUN wget https://gitee.com/loongson-edu/la32r-QEMU/releases/download/v0.0.2/la32r-QEMU-x86_64-ubuntu-22.04.tar  \
+  && tar xvf ./la32r-QEMU-x86_64-ubuntu-22.04.tar   \
+  && rm ./la32r-QEMU-x86_64-ubuntu-22.04.tar
+
+RUN git clone https://gitee.com/loongsonlab/la32r-nemu.git    \
+  && export NEMU_HOME=/home/la32r-nemu/NEMU/  \
+  && cd la32r-nemu/NEMU/            \
+  && sed -i '94s|https://github.com/ucb-bar|https://gitee.com/ourbmc|' Makefile           \
+  && make la32-reduced_defconfig          \
+  && make                   
+
+COPY . .
+
+ENV PATH="$PATH:/usr/local/bin"
+```
+在终端运行如下命令：
+``` shell
+# need sudo
+docker build -t la32r .
+docker run -it la32r:latest /bin/bash
+```
+运行成功后，可在当前路径下，查看和使用qemu-la32r,cross-toolchains-la32r与la32r-nemu等工具。
+
+也可以下载docker镜像，直接加载。
+
+请[点击下载:提取码: e8dc](https://pan.baidu.com/s/1pjKc22GUxnVHV8Kp23cYlQ)。
+
+使用以下命令，加载和使用镜像：
+``` shell
+# need sudo
+docker load -i la32r.tar
+docker images # check load successful
+docker run -it la32r:latest /bin/bash 
+```
+运行成功。
