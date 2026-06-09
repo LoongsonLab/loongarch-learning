@@ -102,7 +102,22 @@ make install
 ```
 即可成功安装 QEMU 。
 
-QEMU 启动运行时，支持的参数选项包括:
+也可通过加载docker镜像的方式，进行部署。
+
+请[点击下载:提取码: s6qx](https://pan.baidu.com/s/1J-dDiQA-CBGNi_vqh8zelw)。
+
+下载后，请使用以下命令加载镜像。
+``` shell
+# need sudo
+docker load -i la64.tar
+docker images # check load successful
+docker run -it la64:latest /bin/bash 
+```
+该镜像中包含了qemu-loongarch64，cross-toolchains(8.3以及14.0两个版本)，以及rust-1.9。
+
+用户可通过重构Dockerfile，或启动后挂载文件夹的方式，将OS或其他文件添加到镜像中，继续调试。
+
+3.  QEMU 启动运行时，支持的参数选项包括:
 ``` shell
 qemu-system-loongarch64 \
   -m 8G \      #  指定分配内存大小
