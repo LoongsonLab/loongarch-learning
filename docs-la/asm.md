@@ -7,8 +7,8 @@ outline: deep
 
 教程系统讲解了龙芯处理器全新的自主指令系统架构LoongArch，循序渐进地介绍基于LoongArch的汇编语言知识，包括计算机语言、使用汇编语言的场景等基础知识，寄存器、指令集、函数调用等汇编语言的核心内容，以及编写程序示例和常用的调试手段。
 
-<p class="asm-read-wrap">
-  <a href="https://doc-assembly-language-loongarch.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer" class="asm-read-btn">点击阅读</a>
+<p class="os-interaction-read-wrap">
+  <a href="https://doc-assembly-language-loongarch.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer" class="os-interaction-read-btn">点击阅读</a>
 </p>
 
 
