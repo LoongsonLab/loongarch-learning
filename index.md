@@ -56,6 +56,8 @@ outline: deep
 
   LoongArch 底层与操作系统内核交互的原理与实现要点。
 
+- [汇编语言基础教程--基于LoongArch架构](/docs-la/asm)
+
 ## **龙架构基础软件**
 
 - [LoongArch 工具链](/toolchain/compiler)
