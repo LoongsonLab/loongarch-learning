@@ -75,7 +75,7 @@ export default defineConfig({
           { text: '官方参考手册', link: '/docs-la/' },
           { text: 'LA32R指令集学习指导手册', link: '/docs-la/others-ref' },
           { text: 'LoongArch架构与OS交互', link: '/docs-la/os-interaction' },
-          { text: '汇编语言基础教程--基于LoongArch架构', link: '/docs-la/asm' },
+          { text: '汇编语言基础教程', link: '/docs-la/asm' },
         ],
       },
       
