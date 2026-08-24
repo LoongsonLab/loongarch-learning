@@ -96,7 +96,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'LoongArch模拟器', link: '/platform/qemu.md' },
-          { text: 'Loong-Studio汇编模拟器', link: '/platform/loong-studio.md'}
+          { text: 'Loong-Studio汇编模拟器', link: '/platform/loong-studio.md'},
           { text: '2k1000LA星云板', link: '/platform/2k1000la' },
           { text: '2k0300蜂鸟板', link: '/platform/2k0300' },
           { text: '2k3000开发板', link: '/platform/2k3000' },
