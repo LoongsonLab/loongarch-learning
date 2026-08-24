@@ -84,6 +84,7 @@ outline: deep
 - [2k0300 蜂鸟](/platform/2k0300)
 - [2k3000 开发板](/platform/2k3000)
 - [LoongArch 模拟器](/platform/qemu)
+- [Loong-Studio汇编模拟器](/platform/loong-studio)
 
 ## **龙架构操作系统**
 
